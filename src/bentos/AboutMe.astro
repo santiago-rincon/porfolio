@@ -1,0 +1,50 @@
+---
+import SocialPill from "@components/SocialPill.astro";
+import LinkedinIcon from "@icons/LinkedinIcon.astro";
+import GithubIcon from "@icons/GithubIcon.astro";
+import MailIcon from "@icons/MailIcon.astro";
+import PhoneIcon from "@icons/PhoneIcon.astro";
+---
+
+<h2
+  class="mb-5 md:mb-0 px-2 text-center font-bold text-xl md:text-2xl text-black dark:text-white"
+>
+  Ingeniero electrónico y desarrollador web
+</h2>
+<article class="flex flex-col md:flex-row items-center">
+  <img
+    class="h-48 aspect-square rounded-full mx-6"
+    src="/photo.webp"
+    alt="Foto de Cristian Rincón"
+  />
+  <div>
+    <p class="text-black dark:text-white p-6 text-pretty">
+      Soy un joven apasionado por la tecnología con una sólida formación en
+      ingeniería electrónica y una versatilidad en el manejo de diversos
+      lenguajes de programación. Mi pasión por la aplicación práctica de la
+      tecnología me impulsa a buscar oportunidades en el sector industrial,
+      donde deseo integrar mi conocimiento técnico para contribuir al diseño y
+      desarrollo de soluciones vanguardistas
+    </p>
+  </div>
+</article>
+<div class="flex justify-center items-center gap-3 flex-wrap">
+  <SocialPill
+    href="https://www.linkedin.com/in/cristian-santiago-rincon-caicedo/"
+  >
+    <LinkedinIcon class="size-4 md:size-5" />
+    LinkedIn
+  </SocialPill>
+  <SocialPill href="https://github.com/santiago-rincon">
+    <GithubIcon class="size-4 md:size-5" />
+    GitHub
+  </SocialPill>
+  <SocialPill href="mailto:csrincon26@gmail.com">
+    <MailIcon class="size-4 md:size-5" />
+    csrincon26@gmail.com
+  </SocialPill>
+  <SocialPill href="tel:+573138355260">
+    <PhoneIcon class="size-4 md:size-5" />
+    Llámate
+  </SocialPill>
+</div>

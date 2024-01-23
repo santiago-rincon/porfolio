@@ -1,0 +1,48 @@
+---
+type NavItem = {
+  title: string;
+  url: string;
+};
+interface Props {
+  className: string;
+  elements: NavItem[];
+}
+
+const { elements, className } = Astro.props;
+---
+
+<div class=`group relative cursor-pointer ${className}`>
+  <div class="flex items-center justify-between gap-x-3">
+    <a
+      class="menu-hover text-base font-medium text-black dark:text-white lg:mx-4"
+    >
+      <slot />
+    </a>
+    <span class="text-black dark:text-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+      </svg>
+    </span>
+  </div>
+  <div
+    class="invisible absolute z-50 flex flex-col bg-gray-100 dark:bg-neutral-900 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+  >
+    {
+      elements.map((element) => (
+        <a class="my-2 block py-1 font-semibold text-black dark:text-white hover:text-black md:mx-2" href={element.url}>
+          {element.title}
+        </a>
+      ))
+    }
+  </div>
+</div>

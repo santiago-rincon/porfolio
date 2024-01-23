@@ -1,29 +1,32 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import BentoCard from "@components/BentoCard.astro";
+import Layout from "@layouts/Layout.astro";
+import AboutMe from "@bentos/AboutMe.astro";
+import Experience from "@bentos/Experience.astro";
 ---
 
 <Layout
   title="Porfolio de Cristian Rincón"
   description="Página principal del porfolio de Cristian Santiago Rincón Caicedo"
 >
-  <main class="max-w-5xl mx-auto grid grid-cols-6">
-    <section class="rounded-2xl h-64 bg-blue-500 col-span-4">
-
-	</section>
-	<section class="rounded-2xl h-64 bg-black col-span-2">
-
-	</section>
-	<section class="rounded-2xl h-64 bg-blue-500 col-span-2">
-
-	</section>
-	<section class="rounded-2xl h-64 bg-black col-span-4">
-
-	</section>
-	<section class="rounded-2xl h-64 bg-blue-500 col-span-4">
-
-	</section>
-	<section class="rounded-2xl h-64 bg-black col-span-2">
-
-	</section>
+  <main class="max-w-5xl mx-auto pb-5 grid grid-cols-6 gap-2">
+    <BentoCard
+      class="rounded-2xl mx-5 md:mx-0 col-span-6 md:col-span-4 bg-neutral-300 dark:bg-neutral-800 flex flex-col justify-center items-center py-5 px-1"
+    >
+      <AboutMe />
+    </BentoCard>
+    <BentoCard
+      class="rounded-2xl mx-5 md:mx-0 col-span-6 md:col-span-2 bg-neutral-300 dark:bg-neutral-800 relative flex flex-col justify-around items-center p-5"
+    >
+      <Experience />
+    </BentoCard>
+    <BentoCard
+      class="h-64 rounded-2xl mx-5 md:mx-0 col-span-6 md:col-span-2 bg-neutral-300 dark:bg-neutral-800"
+    >
+    </BentoCard>
+    <BentoCard
+      class="h-64 rounded-2xl mx-5 md:mx-0 col-span-6 md:col-span-4 bg-neutral-300 dark:bg-neutral-800"
+    >
+    </BentoCard>
   </main>
 </Layout>
