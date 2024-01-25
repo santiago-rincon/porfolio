@@ -14,7 +14,7 @@ interface Props {
 const { data } = Astro.props;
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700 mx-48">
+<ol class="relative border-s border-gray-200 dark:border-gray-700 mx-10 sm:mx-32 md:mx-48">
   {
     data.map(({ title, time, description, link }) => (
       <li class="mb-10 ms-6">

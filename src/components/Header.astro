@@ -26,19 +26,16 @@ const navItems = [
   <nav
     class="border border-black rounded-full px-6 py-1 flex items-center bg-neutral-200 dark:bg-black/50 backdrop-blur-2xl min-w-80 justify-between"
   >
-    <div class="hidden md:block">
-      {
-        navItems.map((link) => (
-          <a
-            class="text-black dark:text-white rounded-full px-2 sm:px-3 text-sm sm:text-base"
-            href={link.url}
-          >
-            {link.title}
-          </a>
-        ))
-      }
-    </div>
-    <DropDown elements={navItems} className="block md:hidden">Menú</DropDown>
+    {
+      navItems.map((link) => (
+        <a
+          class="text-black dark:text-white rounded-full px-2 sm:px-3 text-sm sm:text-base"
+          href={link.url}
+        >
+          {link.title}
+        </a>
+      ))
+    }
     <!-- <SwitchTheme /> -->
   </nav>
 </header>
