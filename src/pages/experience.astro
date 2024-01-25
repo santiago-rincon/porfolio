@@ -1,0 +1,36 @@
+---
+import MainContainer from "@components/MainContainer.astro";
+import TimeLine from "@components/TimeLine.astro";
+import Layout from "@layouts/Layout.astro";
+
+const employs = [
+  {
+    title: "Docente - Fundación Impacto Social Sostenible",
+    time: "Febrero 2022 - Agosto 2023",
+    description:
+      "Fui docente durante un año y medio en un instituto enfocado a la ingeniería donde dicté diferentes cursos. Entre ellos destacan: electrónica automotriz, manejo de sistemas operativos Linux y programación en JavaScript y Python.",
+  },
+  {
+    title: "Auxiliar de investigación - Universidad de Cundinamarca",
+    time: "Agosto 2022 - Abril 2023",
+    description:
+      "Fui auxiliar de investigación durante seis meses en la Universidad de Cundinamarca en Fusagasugá. Durante este tiempo realicé un proyecto de una página web que se encarga de recopilar datos de variables climáticas de manera remota provenientes de una red inalámbrica de sensores instalada en un cultivo de café.",
+    link: "https://app-coffee-gui.web.app",
+  },
+];
+---
+
+<Layout
+  title="Experiencia laboral"
+  description="Experiencia laboral de Cristian Santiago Rincón Caicedo"
+>
+  <MainContainer>
+    <h2
+      class="text-center text-4xl font-bold mb-8"
+      transition:name="experience-title"
+    >
+      Experiencia laboral
+    </h2>
+    <TimeLine data={employs} />
+  </MainContainer>
+</Layout>

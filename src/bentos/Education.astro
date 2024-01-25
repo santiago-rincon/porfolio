@@ -1,0 +1,28 @@
+---
+import SocialPill from "@components/SocialPill.astro";
+import RightArrow from "@components/icons/RightArrow.astro";
+---
+
+<h2
+  class="px-2 text-center font-bold text-xl md:text-2xl text-black dark:text-white"
+  transition:name="education-title"
+>
+  Formación académica
+</h2>
+<p>Actualmente cuento con títulos de:</p>
+<div class="flex items-center w-full justify-around my-2">
+  <ul class="[&>li]:font-semibold [&>li]:text-lg">
+    <li>Pregrado</li>
+    <li>Técnicos</li>
+    <li>Cursos</li>
+  </ul>
+  <img
+    src="/education.webp"
+    alt="Background"
+    class="h-24 aspect-square opacity-20 dark:opacity-60"
+  />
+</div>
+<SocialPill href="/education">
+  Saber más...
+  <RightArrow />
+</SocialPill>

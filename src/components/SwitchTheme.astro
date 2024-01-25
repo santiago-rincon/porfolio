@@ -37,7 +37,7 @@
     position: absolute;
     background: rgb(245, 241, 4);
     border-radius: inherit;
-    background-image: url("/public/sun.svg");
+    background-image: url("/sun.svg");
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-transition:
@@ -81,7 +81,7 @@
   .ui-switch input:checked + .slider .circle {
     left: calc(100% - var(--circle-diameter));
     background: rgb(33, 34, 34);
-    background-image: url("/public/moon.svg");
+    background-image: url("/moon.svg");
   }
 
   .ui-switch input:checked + .slider {
@@ -98,23 +98,4 @@
   }
 </style>
 
-<script>
-  const preferDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  let button = document.getElementById("toggle");
-  if (button instanceof HTMLInputElement) {
-    const toggle = button;
-    if (preferDark) {
-      toggle.checked = true;
-      document.body.classList.toggle("dark", true);
-    } else {
-      toggle.checked = false;
-      document.body.classList.toggle("dark", false);
-    }
-    toggle.addEventListener("change", () => {
-      const check = toggle.checked;
-      document.body.classList.toggle("dark", check);
-    });
-  }
-</script>
+
