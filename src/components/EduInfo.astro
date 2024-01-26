@@ -1,0 +1,41 @@
+---
+import Indicator from '@components/Indicator.astro';
+
+interface Props {
+  title: string;
+  level: string;
+  institute: string;
+  description: string | undefined
+  bg: string;
+  link?: string;
+  year: string
+}
+const { bg, institute, level, title, link, description, year } = Astro.props;
+---
+
+<article class="mx-10 sm:mx-32 md:mx-48">
+  <h3 class="text-2xl font-semibold text-balance text-gray-200 mb-3">
+    {title}
+    {
+      link && (
+        <a
+          class="ms-1 bg-blue-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver certificado
+        </a>
+      )
+    }
+  </h3>
+
+  <p class="text-pretty text-gray-300/80 mb-3">
+    {description}
+  </p>
+  <div class="flex gap-x-3 gap-y-1 flex-wrap mb-8">
+    <Indicator class={bg}>{level}</Indicator>
+    <Indicator class="bg-gray-600">{institute}</Indicator>
+    <Indicator class="bg-emerald-600">{year}</Indicator>
+  </div>
+</article>

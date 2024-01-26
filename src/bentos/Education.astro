@@ -1,4 +1,5 @@
 ---
+import Indicator from "@components/Indicator.astro";
 import SocialPill from "@components/SocialPill.astro";
 import RightArrow from "@components/icons/RightArrow.astro";
 ---
@@ -12,14 +13,15 @@ import RightArrow from "@components/icons/RightArrow.astro";
 <p>Actualmente cuento con títulos de:</p>
 <div class="flex items-center w-full justify-around my-2">
   <ul class="[&>li]:font-semibold [&>li]:text-lg">
-    <li>Pregrado</li>
-    <li>Técnicos</li>
-    <li>Cursos</li>
+    <Indicator class="bg-blue-600">Pregrado</Indicator>
+    <Indicator class="bg-yellow-600">Diplomados</Indicator>
+    <Indicator class="bg-green-600">Técnicos</Indicator>
+    <Indicator class="bg-purple-600">Cursos</Indicator>
   </ul>
   <img
     src="/education.webp"
-    alt="Background"
-    class="h-24 aspect-square opacity-20 dark:opacity-60"
+    alt="Books icon"
+    class="h-24 aspect-square opacity-90"
   />
 </div>
 <SocialPill href="/education">

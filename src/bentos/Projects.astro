@@ -1,6 +1,87 @@
+---
+import Angular from "@icons/tecnologies/Angular.astro";
+import Firebase from "@icons/tecnologies/Firebase.astro";
+import Git from "@icons/tecnologies/Git.astro";
+import Ionic from "@icons/tecnologies/Ionic.astro";
+import Javascript from "@icons/tecnologies/Javascript.astro";
+import Pill from "@components/Pill.astro";
+import Python from "@icons/tecnologies/Python.astro";
+import RightArrow from "@icons/RightArrow.astro";
+import SocialPill from "@components/SocialPill.astro";
+import Tailwind from "@icons/tecnologies/Tailwind.astro";
+import Typescript from "@icons/tecnologies/Typescript.astro";
+---
+
 <h2
   class="px-2 text-center font-bold text-xl md:text-2xl text-black dark:text-white"
   transition:name="projects-title"
 >
   Proyectos
 </h2>
+<div class="flex flex-col gap-y-4 md:flex-row md:justify-around items-center">
+  <p class="px-3 text-pretty md:max-w-[65%]">
+    Con el transcurso de los años he desarrollado algunos proyectos en los
+    cuales se encuentran páginas web, aplicaciones de línea de comandos y
+    aplicaciones nativas.
+    <br />
+    Algunas de las tecnologías que he empleado han sido:
+  </p>
+  <div class="flex w-full justify-around my-2">
+    <img
+      src="/projects.webp"
+      alt="Console icon"
+      class="h-24 aspect-square opacity-90"
+    />
+    <img
+      src="/web.webp"
+      alt="Web page icon"
+      class="h-24 aspect-square opacity-90"
+    />
+  </div>
+</div>
+<ul class="flex flex-wrap gap-3 mb-2">
+  <li>
+    <Pill class="bg-[#f40f5d] border-[#f40f5d] text-[#f40f5d]">
+      <Angular class="size-4" /> Angular
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#fcca3f] border-[#fcca3f] text-[#fcca3f]">
+      <Firebase class="size-4" /> Firebase
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#de4c36] border-[#de4c36] text-[#de4c36]">
+      <Git class="size-4" /> Git
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#478aff] border-[#478aff] text-[#478aff]">
+      <Ionic class="size-4" /> Ionic
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#f0db4f] border-[#f0db4f] text-[#f0db4f]">
+      <Javascript class="size-4" /> JavaScript
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#0277bd] border-[#0277bd] text-[#0277bd]">
+      <Python class="size-4" /> Python
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#17b9b9] border-[#17b9b9] text-[#17b9b9]">
+      <Tailwind class="size-4" /> TailwindCSS
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#3178c6] border-[#3178c6] text-[#3178c6]">
+      <Typescript class="size-4" /> Typescript
+    </Pill>
+  </li>
+</ul>
+<SocialPill href="/projects" class="">
+  Saber más...
+  <RightArrow />
+</SocialPill>

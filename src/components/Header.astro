@@ -1,7 +1,4 @@
 ---
-import SwitchTheme from "@components/SwitchTheme.astro";
-import DropDown from "./DropDown.astro";
-
 const navItems = [
   {
     title: "Inicio",
@@ -16,13 +13,13 @@ const navItems = [
     url: "/projects",
   },
   {
-    title: "Estudios",
+    title: "Formación",
     url: "/education",
   },
 ];
 ---
 
-<header class="flex justify-center items-center mx-auto pt-5 pb-6 w-full">
+<header class="flex justify-center items-center sticky z-50 top-0 mx-auto pt-5 pb-6 w-full">
   <nav
     class="border border-black rounded-full px-6 py-1 flex items-center bg-neutral-200 dark:bg-black/50 backdrop-blur-2xl min-w-80 justify-between"
   >
