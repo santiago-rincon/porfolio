@@ -1,0 +1,78 @@
+---
+import AngularPill from "@icons/pills/AngularPill.astro";
+import BootstrapPill from "@icons/pills/BootstrapPill.astro";
+import FirebasePill from "@icons/pills/FirebasePill.astro";
+import GithubIcon from "@icons/GithubIcon.astro";
+import GitPill from "@icons/pills/GitPill.astro";
+import IonicPill from "@icons/pills/IonicPill.astro";
+import JavascriptPill from "@icons/pills/JavascriptPill.astro";
+import PythonPill from "@icons/pills/PythonPill.astro";
+import SocialPill from "@components/SocialPill.astro";
+import TailwindPill from "@icons/pills/TailwindPill.astro";
+import TypescriptPill from "@icons/pills/TypescriptPill.astro";
+import Www from "@icons/Www.astro";
+import Carousel from "./Carousel.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  imgs: string[];
+  tecnologies: string[];
+  code: string;
+  link?: string;
+}
+const { code, description, imgs, tecnologies, title, link } = Astro.props;
+---
+
+<article class="mx-10 sm:mx-32 md:mx-48">
+  <h3 class="text-2xl font-semibold text-balance text-gray-200 mb-3">
+    {title}
+  </h3>
+  <p class="text-pretty text-gray-300/80 mb-3">
+    {description}
+  </p>
+  <p class="text-pretty text-gray-300/80 mb-3">
+    <strong>Tecnologías:</strong>
+  </p>
+  <div class="flex flex-wrap gap-3 mb-5">
+    {
+      tecnologies.map((tec) => {
+        switch (tec) {
+          case "Angular":
+            return <AngularPill />;
+          case "Bootstrap":
+            return <BootstrapPill />;
+          case "Firebase":
+            return <FirebasePill />;
+          case "Git":
+            return <GitPill />;
+          case "Ionic":
+            return <IonicPill />;
+          case "Javascript":
+            return <JavascriptPill />;
+          case "Python":
+            return <PythonPill />;
+          case "Tailwind":
+            return <TailwindPill />;
+          case "Typescript":
+            return <TypescriptPill />;
+        }
+      })
+    }
+  </div>
+  <Carousel images={imgs}/>
+  <!-- <img src={img} alt=`Preview of ${title}` class=""/> -->
+  <div class="flex gap-x-3 gap-y-1 flex-wrap mb-6">
+    <SocialPill href={code} target>
+      <GithubIcon class="size-5  md:size-6" /> Ver código fuente
+    </SocialPill>
+    {
+      link && (
+        <SocialPill href={link} target>
+          <Www class="size-5 md:size-6" />
+          Ir al sitio web
+        </SocialPill>
+      )
+    }
+  </div>
+</article>

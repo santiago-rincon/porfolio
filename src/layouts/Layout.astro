@@ -27,7 +27,7 @@ const { title, description } = Astro.props;
       class="absolute top-0 z-[-2] h-full w-full bg-white dark:bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
-    <Header/>
+    <Header />
     <slot />
     <style is:global>
       :root {
@@ -35,6 +35,24 @@ const { title, description } = Astro.props;
       }
       html {
         font-family: system-ui, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1c1c2a;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid #252525;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.5);
       }
     </style>
   </body>

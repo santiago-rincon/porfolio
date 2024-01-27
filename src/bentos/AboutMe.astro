@@ -4,6 +4,7 @@ import LinkedinIcon from "@icons/LinkedinIcon.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
 import MailIcon from "@icons/MailIcon.astro";
 import PhoneIcon from "@icons/PhoneIcon.astro";
+import Download from "@components/icons/Download.astro";
 ---
 
 <h2
@@ -11,13 +12,23 @@ import PhoneIcon from "@icons/PhoneIcon.astro";
 >
   Ingeniero electrónico y desarrollador web
 </h2>
-<article class="flex flex-col md:flex-row-reverse items-center">
-  <img
-    class="h-48 aspect-square rounded-full mx-6"
-    src="/photo.webp"
-    alt="Foto de Cristian Rincón"
-  />
-  <p class="text-black dark:text-white p-6 text-pretty">
+<article class="flex flex-col md:flex-row-reverse items-center justify-center mb-4">
+  <div class="flex flex-col justify-center items-center gap-y-3">
+    <img
+      class="h-48 aspect-square rounded-full mx-6"
+      src="/photo.webp"
+      alt="Foto de Cristian Rincón"
+    />
+    <a
+      class="flex gap-x-2 items-center bg-blue-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300"
+      href="/cv.pdf"
+      download
+      rel="noopener noreferrer"
+    >
+      CV <Download class="size-4" />
+    </a>
+  </div>
+  <p class="text-black dark:text-white px-6 py-3 md:p-5 text-pretty md:w-[70%]">
     Soy un joven apasionado por la tecnología con una sólida formación en
     ingeniería electrónica y una versatilidad en el manejo de diversos lenguajes
     de programación. Mi pasión por la aplicación práctica de la tecnología me
