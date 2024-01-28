@@ -22,6 +22,9 @@ interface Props {
   link?: string;
 }
 const { code, description, imgs, tecnologies, title, link } = Astro.props;
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <article class="mx-10 sm:mx-32 md:mx-48">
@@ -32,7 +35,7 @@ const { code, description, imgs, tecnologies, title, link } = Astro.props;
     {description}
   </p>
   <p class="text-pretty text-gray-300/80 mb-3">
-    <strong>Tecnologías:</strong>
+    <strong>{i18n.TECNOLOGIES}:</strong>
   </p>
   <div class="flex flex-wrap gap-3 mb-5">
     {
@@ -64,13 +67,13 @@ const { code, description, imgs, tecnologies, title, link } = Astro.props;
   <!-- <img src={img} alt=`Preview of ${title}` class=""/> -->
   <div class="flex gap-x-3 gap-y-1 flex-wrap mb-6">
     <SocialPill href={code} target>
-      <GithubIcon class="size-5  md:size-6" /> Ver código fuente
+      <GithubIcon class="size-5  md:size-6" /> {i18n.SOURCE_CODE}
     </SocialPill>
     {
       link && (
         <SocialPill href={link} target>
           <Www class="size-5 md:size-6" />
-          Ir al sitio web
+          {i18n.WEB_SITE}
         </SocialPill>
       )
     }

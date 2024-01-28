@@ -1,0 +1,40 @@
+---
+import BentoCard from "@components/BentoCard.astro";
+import Layout from "@layouts/Layout.astro";
+import AboutMe from "@bentos/AboutMe.astro";
+import Experience from "@bentos/Experience.astro";
+import MainContainer from "@components/MainContainer.astro";
+import Education from "@bentos/Education.astro";
+import Projects from "@bentos/Projects.astro";
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<Layout
+  title={i18n.HOME.TITLE}
+  description={i18n.HOME.DESCRIPTION}
+>
+  <MainContainer class="grid grid-cols-6 gap-3">
+    <BentoCard
+      class="lg:col-span-4 flex flex-col justify-center items-center py-5 px-1"
+    >
+      <AboutMe />
+    </BentoCard>
+    <BentoCard
+      class="md:col-span-3 lg:col-span-2 flex flex-col justify-around items-center p-5"
+    >
+      <Experience />
+    </BentoCard>
+    <BentoCard
+      class="md:col-span-3 lg:col-span-2 flex flex-col gap-y-3 justify-around p-5"
+    >
+      <Education />
+    </BentoCard>
+    <BentoCard
+      class="lg:col-span-4 flex flex-col gap-y-4 justify-around items-center p-5"
+    >
+      <Projects />
+    </BentoCard>
+  </MainContainer>
+</Layout>

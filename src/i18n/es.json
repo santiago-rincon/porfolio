@@ -1,0 +1,255 @@
+{
+  "HOME": {
+    "TITLE": "Porfolio de Cristian Santiago Rincón",
+    "DESCRIPTION": "Porfolio de Cristian Santiago Rincón Caicedo, ingeniero electrónico y desarrollador web"
+  },
+  "ABOUTME": {
+    "TITLE": "Ingeniero electrónico y desarrollador web",
+    "DESCRIPTION": "Soy un joven apasionado por la tecnología con una sólida formación en ingeniería electrónica y una versatilidad en el manejo de diversos lenguajes de programación. Mi pasión por la aplicación práctica de la tecnología me impulsa a buscar oportunidades en el sector industrial, donde deseo integrar mi conocimiento técnico para contribuir al diseño y desarrollo de soluciones vanguardistas.",
+    "CALLME": "Llámame"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia laboral",
+    "DESCRIPTION": "Experiencia laboral de Cristian Santiago Rincón Caicedo",
+    "MAIN_TITLE": "Experiencia laboral",
+    "JOBS": [
+      {
+        "title": "Docente - Fundación Impacto Social Sostenible",
+        "time": "Febrero 2022 - Agosto 2023",
+        "description": "Fui docente durante un año y medio en un instituto enfocado a la ingeniería donde dicté diferentes cursos. Entre ellos destacan: electrónica automotriz, manejo de sistemas operativos Linux y programación en JavaScript y Python."
+      },
+      {
+        "title": "Auxiliar de investigación - Universidad de Cundinamarca",
+        "time": "Agosto 2022 - Abril 2023",
+        "description": "Fui auxiliar de investigación durante seis meses en la Universidad de Cundinamarca en Fusagasugá. Durante este tiempo realicé un proyecto de una página web que se encarga de recopilar datos de variables climáticas de manera remota provenientes de una red inalámbrica de sensores instalada en un cultivo de café.",
+        "link": "/projects",
+        "target": false
+      }
+    ]
+  },
+  "NAVBAR": [
+    {
+      "title": "Inicio",
+      "url": "/es"
+    },
+    {
+      "title": "Experiencia",
+      "url": "/es/experience"
+    },
+    {
+      "title": "Proyectos",
+      "url": "/es/projects"
+    },
+    {
+      "title": "Formación",
+      "url": "/es/education"
+    }
+  ],
+  "BENTOS": {
+    "EXPERIENCE": {
+      "TITLE": "Experiencia laboral",
+      "DESCRIPTION": "Me he desempeñado como docente y auxiliar de investigación en áreas relacionadas con la ingeniería y el desarrollo web.",
+      "LINK": "/es/experience"
+    },
+    "EDUCATION": {
+      "TITLE": "Formación académica",
+      "DESCRIPTION1": "Actualmente, cuento con títulos de:",
+      "DESCRIPTION2": "En centros de educación como Cisco, Fundación Carlos Slim y la Universidad de Cundinamarca.",
+      "LINK": "/es/education",
+      "ITEMS": ["Pregrado", "Diplomados", "Técnicos", "Cursos"]
+    },
+    "PROJECTS": {
+      "TITLE": "Proyectos",
+      "DESCRIPTION1": "Con el transcurso de los años he desarrollado algunos proyectos en los cuales se encuentran páginas web, aplicaciones de línea de comandos y aplicaciones nativas.",
+      "DESCRIPTION2": "Algunas de las tecnologías que he empleado han sido:",
+      "LINK": "/es/projects"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "LIST": [
+      {
+        "title": "App Coffee GUI",
+        "description": "Aplicación web para el monitoreo de variables climáticas de una red inalámbrica de sensores en un cultivo de café. Creada e integrada con Angular y Firebase para la configuración remota de parámetros en la red de sensores, para autenticación y servicio de hosting.",
+        "imgs": [
+          "/coffee.webp",
+          "/coffee1.webp",
+          "/coffee2.webp",
+          "/coffee3.webp"
+        ],
+        "tecnologies": [
+          "Angular",
+          "Bootstrap",
+          "Firebase",
+          "Git",
+          "Javascript",
+          "Typescript"
+        ],
+        "code": "https://github.com/santiago-rincon/app_coffee_gui",
+        "link": "https://app-coffee-gui.web.app/"
+      },
+      {
+        "title": "Aplicación de transporte",
+        "description": "Aplicación multiplataforma que se integra con la API de Google Maps para la obtención de la ubicación en tiempo real, renderización de mapas, búsqueda de la ruta más óptima entre dos puntos seleccionados y búsqueda de lugares a través  de la API Geocoding. Creada e integrada con Angular, Ionic, Capacitor y Firebase para el uso de base de datos, autenticación y hosting.",
+        "imgs": [
+          "/transport1.webp",
+          "/transport.webp",
+          "/transport2.webp",
+          "/transport3.webp",
+          "/transport4.webp"
+        ],
+        "tecnologies": [
+          "Angular",
+          "Firebase",
+          "Git",
+          "Ionic",
+          "Javascript",
+          "Tailwind",
+          "Typescript"
+        ],
+        "code": "https://github.com/santiago-rincon/travel_app",
+        "link": "https://transport-app-26.web.app/"
+      },
+      {
+        "title": "PDFPy",
+        "description": "Pdfpy es una aplicación de línea de comandos (CLI) para la manipulación local de archivos PDF hecha en Python con la librería PyPDF2 compatible con Windows, Mac y Linux. Permite unir o separar archivos, leer o escribir metadatos en los archivos y encriptar o desencriptar archivos.",
+        "imgs": ["/pdfpy.webp", "/pdfpy1.webp"],
+        "tecnologies": ["Git", "Python"],
+        "code": "https://github.com/santiago-rincon/pdfpy"
+      },
+      {
+        "title": "Background remover",
+        "description": "Background remover es una aplicación de línea de comandos (CLI) para eliminar el fondo de imágenes con formatos png, jpg y jpeg hecha en Python con la librería rembg. Soporta el tratamiento de imágenes individuales o de todos los archivos de una carpeta.",
+        "imgs": ["/bg.webp", "/bg1.webp"],
+        "tecnologies": ["Git", "Python"],
+        "code": "https://github.com/santiago-rincon/bgremoverpy"
+      }
+    ]
+  },
+  "EDUCATION": {
+    "TITLE": "Formación académica",
+    "EDUCATIONS": [
+      {
+        "title": "Ingeniería electrónica",
+        "level": "Pregrado",
+        "institute": "Universidad de Cundinamarca",
+        "bg": "bg-blue-600",
+        "description": "Como profesional en ingeniería electrónica puedo desempeñarme en el sector industrial como de ingeniero de análisis, diseño, gestión y desarrollo. Por otra parte, puedo brindar mantenimiento y soporte técnico de aplicaciones a sistemas electrónicos de comunicaciones, instrumentación electrónica, control industrial, energías alternativas o sistemas computacionales. Y finalmente, me puedo desempeñar como investigador en áreas de tecnología.",
+        "year": "2018 - 2023"
+      },
+      {
+        "title": "Técnico en cómputo en la nube",
+        "level": "Diplomado",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-yellow-600",
+        "description": "Como técnico en cómputo en la nube o Cloud Computing, me enfoco en el desarrollo de competencias técnico-profesionales relacionadas con el funcionamiento, requerimientos, administración, seguridad y adaptación de los diferentes niveles de servicio y despliegue, derivados del modelo de servicios digitales de Cloud a través de las tecnologías de la información.",
+        "link": "https://drive.google.com/file/d/1izTwdafg8Pu3C8y6_7jwANcJC4OHU6vD/view?usp=drive_link",
+        "year": "2024"
+      },
+      {
+        "title": "Instalación de redes de computadores",
+        "level": "Técnico",
+        "institute": "SENA",
+        "bg": "bg-green-600",
+        "description": "Como técnico en instalación de redes de computadores realizó la implementación de la red física de datos e inalámbrica local según especificaciones del diseño y estándares técnicos utilizando herramientas informáticas de acuerdo con las necesidades de manejo de información. Además, estoy en la capacidad de montar instalaciones eléctricas internas de acuerdo con la normativa vigente.",
+        "link": "https://drive.google.com/file/d/1NhPZp9cFPx2f7GVF7iTGlCMGQDPgGpqx/view?usp=drive_link",
+        "year": "2017"
+      },
+      {
+        "title": "Técnico en seguridad informática de servidores",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1Eip18wN5JoZwh1u-g9tg2PaCfreq_NNX/view?usp=drive_link",
+        "description": "Como técnico en seguridad informática de servidores, resguardo la integridad de la información almacenada y procesada en el servidor, estableciendo un correcto control de accesos para el uso de software. Comprendo el funcionamiento del sistema operativo Linux de un servidor y gestiono los servicios de los que dispone. Desarrollo e implemento un plan de control de riesgos para gestionar eventos que puedan afectar el desempeño o la calidad de la información almacenada. Sigo las normas de la comunidad de código abierto con responsabilidad y honestidad, así como a las medidas de seguridad e higiene pertinente para el cuidado de su bienestar integral en el desempeño de sus labores.",
+        "year": "2024"
+      },
+      {
+        "title": "Desarrollador de aplicaciones en la nube",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/176YDXQmYI39yTj7lQdh8u2BpD-H9J2Nr/view?usp=drive_link",
+        "description": "Como desarrollador de aplicaciones en la nube estoy en la capacidad de: realizar el proceso de ingeniería de requisitos, utilizar frameworks hechos por terceros para implementar funcionalidades, utilizar una plataforma para el desarrollo del back-end y despliegue de las aplicaciones, además de  emplear herramientas para versionamiento de proyectos.",
+        "year": "2024"
+      },
+      {
+        "title": "Técnico en seguridad en la nube",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1ovciyr5z88NTf0FJGCUXSdgotU_tAYxy/view?usp=drive_link",
+        "description": "Como técnico en seguridad en la nube resguardo la integridad de la información procesada en una infraestructura de nube privada dentro de una empresa. Estoy en la capacidad de: configurar el servidor estableciendo un correcto control de accesos para el uso de software, resguardar por completo la información en los sistemas de almacenamiento y control del flujo de información a través de la infraestructura de red. Comprendo el funcionamiento del sistema operativo Linux de un servidor y gestiono los servicios de los que dispone junto con los protocolos y puertos que dispone para su comunicación a través de internet.",
+        "year": "2024"
+      },
+      {
+        "title": "Administrador de la nube",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1lQ7LOnBt7yuPlk4VthC12mxPHQg2iMla/view?usp=drive_link",
+        "description": "Como administrador de la nube comprendo cómo funciona el cómputo en la nube y manejo los diferentes servicios que se ofrecen basados en esta tecnología.  Estoy en la capacidad de manejar las instancias de acceso a la nube para cada usuario en diferentes ambientes, realizar una verificación de los accesos a cada instancia de la nube, monitorear el sistema y configurar alarmas de accesos no autorizados, mediante correos electrónicos o mensajes SMS.",
+        "year": "2024"
+      },
+      {
+        "title": "Fundamentos del cómputo en la nube",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1dgqqlvTaAM2phe6gsJFlaaxSmBcMcI_L/view?usp=drive_link",
+        "description": "Con esta formación comprendo cómo funciona el cómputo en la nube y las ventajas de los diferentes servicios que se ofrecen basados en esta tecnología; además, conozco la fundamentación de la arquitectura en la nube y los modelos de negocio que derivan de la misma. Estoy en la capacidad de identificar las variables de selección para dar de alta máquinas virtuales, comprender la arquitectura de los centros de datos que alojan a la nube, migrar proyectos aplicativos en su instancia dedicada a una instancia en la nube, garantizar la disponibilidad de la aplicación en la nube en sus diferentes grados, conocer las nuevas tecnologías implementadas en el sector de las TIC como IoT y Big Data.",
+        "year": "2024"
+      },
+      {
+        "title": "Fundamentos de virtualización",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1xcmLf3Zll7QxVvLtYxH1c9_xhEkpBsre/view?usp=drive_link",
+        "description": "Con esta formación comprendo las características de la tecnología como el hipervisor, máquinas virtuales, migración del sistema, gestión del almacenamiento y las redes. Estoy en la capacidad de configurar una máquina virtual con sistema operativo y un entorno de trabajo virtual. Además, conozco las principales aplicaciones dentro de una empresa y los perfiles de los recursos humanos necesarios para implementar esta propuesta tecnológica.",
+        "year": "2024"
+      },
+      {
+        "title": "Asesor de servicios de infraestructura en la nube",
+        "level": "Curso",
+        "institute": "Fundación Carlos Slim",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1JCFgMJiQOERg7naJUW-axn2I_TsYd1o_/view?usp=drive_link",
+        "description": "Como asesor de infraestructura del cómputo en la nube selecciono, integro y administro los recursos que ofrece la plataforma de un proveedor para hospedar diferentes aplicaciones, por lo que analizo el ciclo de vida en la implementación del servicio. Comprendo el funcionamiento del cómputo unificado y distribuido. Estoy en la capacidad de elegir la tecnología de cómputo, almacenamiento y red según los requisitos del cliente. Y finalmente, garantizo la calidad del servicio de infraestructura al responder la escalabilidad, flexibilidad, disponibilidad y seguridad que demanda.",
+        "year": "2024"
+      },
+      {
+        "title": "Introducción a la ciberseguridad",
+        "level": "Curso",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/7c4f8802-896f-4ccc-bb6a-185586f72e51",
+        "description": "Con esta formación comprendo las amenazas, ataques y vulnerabilidades más comunes y aplico conceptos básicos de ciberseguridad para proteger la vida digital, personal o de cualquier otra entidad. Comprendo los mayores desafíos de seguridad y el impacto que estos generan en empresas, gobiernos y otras instituciones en la actualidad.",
+        "year": "2023"
+      },
+      {
+        "title": "Networking básico",
+        "level": "Curso",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/7a04ca58-6180-487f-a22f-bd700b985ad1",
+        "description": "Con esta formación comprendo los fundamentos de las redes y los dispositivos, medios y protocolos de red, cómo funcionan, cómo los dispositivos envían y reciben datos, los tipos de cableado de red, cómo las direcciones IP encuentran información en Internet, cómo funcionan el transporte y las aplicaciones. Estoy en la capacidad de observar el flujo de datos a través de una red y configurar dispositivos para conectarse a redes por medio de diferentes aplicaciones y protocolos para realizar diferentes  tareas.",
+        "year": "2023"
+      },
+      {
+        "title": "Instalaciones eléctricas domiciliarias",
+        "level": "Curso",
+        "institute": "SENA",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1QbNO-UGYl8TWcR02odTCZuqi8302JMJr/view?usp=drive_link",
+        "description": "Con esta formación puedo realizar la planeación y ejecución de la red energética de acuerdo con la regulación vigente y los procesos establecidos por la empresa.",
+        "year": "2016"
+      }
+    ]
+  },
+  "LEARNMORE": "Saber más...",
+  "SEE_CERTIFICATE": "Ver certificado",
+  "TECNOLOGIES": "Tecnologías",
+  "SOURCE_CODE": "Ver código fuente",
+  "WEB_SITE": "Ir al sitio web"
+}

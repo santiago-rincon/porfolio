@@ -1,25 +1,16 @@
 ---
-const navItems = [
-  {
-    title: "Inicio",
-    url: "/",
-  },
-  {
-    title: "Experiencia",
-    url: "/experience",
-  },
-  {
-    title: "Proyectos",
-    url: "/projects",
-  },
-  {
-    title: "Formación",
-    url: "/education",
-  },
-];
+import { getI18n } from "src/i18n";
+import DropDown from "@components/DropDown.astro";
+import Languages from "@icons/Languages.astro";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+const navItems = i18n.NAVBAR;
+const { pathname } = Astro.url;
 ---
 
-<header class="flex justify-center items-center sticky z-50 top-0 mx-auto pt-5 pb-6 w-full">
+<header
+  class="flex justify-center items-center sticky z-50 top-0 mx-auto pt-5 pb-6 w-full"
+>
   <nav
     class="border border-black rounded-full px-6 py-1 flex items-center bg-neutral-200 dark:bg-black/50 backdrop-blur-2xl min-w-80 justify-between"
   >
@@ -33,34 +24,13 @@ const navItems = [
         </a>
       ))
     }
-    <!-- <SwitchTheme /> -->
+    <DropDown
+      elements={[
+        { title: "Español", url: `${pathname.replace('en','es')}` },
+        { title: "English", url: `${pathname.replace('es','en')}` },
+      ]}
+    >
+      <Languages/>
+    </DropDown>
   </nav>
 </header>
-
-<!-- <script>
-  const preferDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  let button = document.getElementById("toggle");
-  if (button instanceof HTMLInputElement) {
-    if (preferDark) {
-      button.checked = true;
-      document.body.classList.toggle("dark", true);
-    } else {
-      button.checked = false;
-      document.body.classList.toggle("dark", false);
-    }
-    button.addEventListener("change", () => {
-      if (button instanceof HTMLInputElement) {
-        const check = button.checked;
-        document.body.classList.toggle("dark", check);
-      }
-    });
-  }
-  document.addEventListener("astro:after-swap", () => {
-    if (button instanceof HTMLInputElement) {
-      console.log(button.checked);
-      document.body.classList.toggle("dark", button.checked);
-    }
-  });
-</script> -->

@@ -7,16 +7,20 @@ type employ = {
   time: string;
   description: string;
   link?: string;
+  target?: boolean
 };
 interface Props {
   data: employ[];
 }
 const { data } = Astro.props;
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700 mx-10 sm:mx-32 md:mx-48">
   {
-    data.map(({ title, time, description, link }) => (
+    data.map(({ title, time, description, link,target }) => (
       <li class="mb-10 ms-6">
         <span class="absolute flex items-center justify-center size-6 p-1 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
           <Briefcase />
@@ -31,8 +35,8 @@ const { data } = Astro.props;
           {description}
         </p>
         {link && (
-          <SocialPill href={link} target class="max-w-fit">
-            Saber más...
+          <SocialPill href={link} target={target} class="max-w-fit">
+            {i18n.LEARNMORE}
             <RightArrow />
           </SocialPill>
         )}

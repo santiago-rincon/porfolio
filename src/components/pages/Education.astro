@@ -1,0 +1,38 @@
+---
+import EduInfo from "@components/EduInfo.astro";
+import MainContainer from "@components/MainContainer.astro";
+import Layout from "@layouts/Layout.astro";
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+const education = i18n.EDUCATION.EDUCATIONS;
+---
+
+<Layout
+  title="Formación académica"
+  description="Formación académica de Cristian Santiago Rincón"
+>
+  <MainContainer>
+    <h2
+      class="text-center text-3xl md:text-4xl font-bold mb-8"
+      transition:name="education-title"
+    >
+      {i18n.EDUCATION.TITLE}
+    </h2>
+    {
+      education.map(
+        ({ title, institute, level, bg, link, description, year }) => (
+          <EduInfo
+            title={title}
+            institute={institute}
+            level={level}
+            bg={bg}
+            link={link}
+            description={description}
+            year={year}
+          />
+        )
+      )
+    }
+  </MainContainer>
+</Layout>

@@ -1,18 +1,20 @@
 ---
 import SocialPill from "@components/SocialPill.astro";
 import RightArrow from "@components/icons/RightArrow.astro";
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <h2
   class="px-2 text-center font-bold text-xl md:text-2xl text-black dark:text-white"
   transition:name="experience-title"
 >
-  Experiencia laboral
+  {i18n.BENTOS.EXPERIENCE.TITLE}
 </h2>
 <div  class="flex items-center w-full justify-around my-2">
   <p class="text-pretty my-9 text-black dark:text-white">
-    Me he desempeñado como docente y auxiliar de investigación en
-    áreas relacionadas con la ingeniería y el desarrollo web.
+    {i18n.BENTOS.EXPERIENCE.DESCRIPTION}
   </p>
   <img
     src="/job.webp"
@@ -20,7 +22,7 @@ import RightArrow from "@components/icons/RightArrow.astro";
     class="h-24 aspect-square opacity-90"
   />
 </div>
-<SocialPill href="/experience" class="">
-  Saber más...
+<SocialPill href={i18n.BENTOS.EXPERIENCE.LINK} class="">
+  {i18n.LEARNMORE}
   <RightArrow />
 </SocialPill>

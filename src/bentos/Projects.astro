@@ -11,21 +11,22 @@ import RightArrow from "@icons/RightArrow.astro";
 import SocialPill from "@components/SocialPill.astro";
 import Tailwind from "@icons/tecnologies/Tailwind.astro";
 import Typescript from "@icons/tecnologies/Typescript.astro";
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <h2
   class="px-2 text-center font-bold text-xl md:text-2xl text-black dark:text-white"
   transition:name="projects-title"
 >
-  Proyectos
+  {i18n.BENTOS.PROJECTS.TITLE}
 </h2>
 <div class="flex flex-col gap-y-4 md:flex-row md:justify-around items-center">
   <p class="px-3 text-pretty md:max-w-[65%]">
-    Con el transcurso de los años he desarrollado algunos proyectos en los
-    cuales se encuentran páginas web, aplicaciones de línea de comandos y
-    aplicaciones nativas.
+    {i18n.BENTOS.PROJECTS.DESCRIPTION1}
     <br />
-    Algunas de las tecnologías que he empleado han sido:
+    {i18n.BENTOS.PROJECTS.DESCRIPTION2}
   </p>
   <div class="flex w-full justify-around my-2">
     <img
@@ -85,7 +86,8 @@ import Typescript from "@icons/tecnologies/Typescript.astro";
     </Pill>
   </li>
 </ul>
-<SocialPill href="/projects" class="">
-  Saber más...
+
+<SocialPill href={i18n.BENTOS.PROJECTS.LINK} class="">
+  {i18n.LEARNMORE}
   <RightArrow />
 </SocialPill>

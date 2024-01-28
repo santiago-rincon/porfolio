@@ -1,0 +1,255 @@
+{
+  "HOME": {
+    "TITLE": "Portfolio of Cristian Santiago Rincón",
+    "DESCRIPTION": "Portfolio of Cristian Santiago Rincón Caicedo, electronic engineer and web developer."
+  },
+  "ABOUTME": {
+    "TITLE": "Electronics engineer and web developer",
+    "DESCRIPTION": "I am a young man passionate about technology with a solid background in electronic engineering and a versatility in handling various programming languages. My passion for the practical application of technology drives me to seek opportunities in the industrial sector, where I want to integrate my technical knowledge to contribute to the design and development of cutting-edge solutions.",
+    "CALLME": "Call me"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Work experience",
+    "DESCRIPTION": "Cristian Santiago Rincón Caicedo's work experience",
+    "MAIN_TITLE": "Work experience",
+    "JOBS": [
+      {
+        "title": "Teacher - Fundación Impacto Social Sostenible",
+        "time": "February 2022 - August 2023",
+        "description": "I was a teacher for a year and a half in an institute focused on engineering where I taught different courses. Among them: automotive electronics, Linux operating systems management and programming in JavaScript and Python."
+      },
+      {
+        "title": "Research Assistant - University of Cundinamarca",
+        "time": "August 2022 - April 2023",
+        "description": "I was a research assistant for six months at the University of Cundinamarca in Fusagasugá. During this time I carried out a project of a web page that is responsible for collecting data of climatic variables remotely from a wireless sensor network installed in a coffee crop.",
+        "link": "/en/projects",
+        "target": false
+      }
+    ]
+  },
+  "NAVBAR": [
+    {
+      "title": "Home",
+      "url": "/en"
+    },
+    {
+      "title": "Experience",
+      "url": "/en/experience"
+    },
+    {
+      "title": "Projects",
+      "url": "/en/projects"
+    },
+    {
+      "title": "Education",
+      "url": "/en/education"
+    }
+  ],
+  "BENTOS": {
+    "EXPERIENCE": {
+      "TITLE": "Work experience",
+      "DESCRIPTION": "I have worked as a teacher and research assistant in areas related to engineering and web development.",
+      "LINK": "/en/experience"
+    },
+    "EDUCATION": {
+      "TITLE": "Academic background",
+      "DESCRIPTION1": "Currently, I have degrees in:",
+      "DESCRIPTION2": "In education centers such as Cisco, Carlos Slim Foundation and the University of Cundinamarca.",
+      "LINK": "/en/education",
+      "ITEMS": ["Undergraduate", "Diplomas", "Technicians", "Courses"]
+    },
+    "PROJECTS": {
+      "TITLE": "Projects",
+      "DESCRIPTION1": "Over the years I have developed a number of projects including web pages, command line applications and native applications.",
+      "DESCRIPTION2": "Some of the technologies I have used have been:",
+      "LINK": "/en/projects"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "LIST": [
+      {
+        "title": "App Coffee GUI",
+        "description": "Web application for monitoring climatic variables of a wireless sensor network in a coffee crop. Created and integrated with Angular and Firebase for remote configuration of parameters in the sensor network, for authentication and hosting service.",
+        "imgs": [
+          "/coffee.webp",
+          "/coffee1.webp",
+          "/coffee2.webp",
+          "/coffee3.webp"
+        ],
+        "tecnologies": [
+          "Angular",
+          "Bootstrap",
+          "Firebase",
+          "Git",
+          "Javascript",
+          "Typescript"
+        ],
+        "code": "https://github.com/santiago-rincon/app_coffee_gui",
+        "link": "https://app-coffee-gui.web.app/"
+      },
+      {
+        "title": "Transportation application",
+        "description": "Cross-platform application that integrates with Google Maps API to obtain real-time location, map rendering, search for the most optimal route between two selected points and search for places through the Geocoding API. Created and integrated with Angular, Ionic, Capacitor and Firebase for database usage, authentication and hosting.",
+        "imgs": [
+          "/transport1.webp",
+          "/transport.webp",
+          "/transport2.webp",
+          "/transport3.webp",
+          "/transport4.webp"
+        ],
+        "tecnologies": [
+          "Angular",
+          "Firebase",
+          "Git",
+          "Ionic",
+          "Javascript",
+          "Tailwind",
+          "Typescript"
+        ],
+        "code": "https://github.com/santiago-rincon/travel_app",
+        "link": "https://transport-app-26.web.app/"
+      },
+      {
+        "title": "PDFPy",
+        "description": "Pdfpy is a command line application (CLI) for local manipulation of PDF files made in Python with the PyPDF2 library compatible with Windows, Mac and Linux. It allows to join or split files, read or write metadata in files and encrypt or decrypt files.",
+        "imgs": ["/pdfpy.webp", "/pdfpy1.webp"],
+        "tecnologies": ["Git", "Python"],
+        "code": "https://github.com/santiago-rincon/pdfpy"
+      },
+      {
+        "title": "Background remover",
+        "description": "Background remover is a command line application (CLI) to remove the background of images in png, jpg and jpeg formats made in Python with the rembg library. It supports processing of individual images or all files in a folder.",
+        "imgs": ["/bg.webp", "/bg1.webp"],
+        "tecnologies": ["Git", "Python"],
+        "code": "https://github.com/santiago-rincon/bgremoverpy"
+      }
+    ]
+  },
+  "EDUCATION": {
+    "TITLE": "Academic background",
+    "EDUCATIONS": [
+      {
+        "title": "Electronic engineering",
+        "level": "Undergraduate",
+        "institute": "University of Cundinamarca",
+        "bg": "bg-blue-600",
+        "description": "As a professional in electronic engineering, I can work in the industrial sector as an engineer of analysis, design, management and development. On the other hand, I can provide maintenance and technical support of applications to electronic communications systems, electronic instrumentation, industrial control, alternative energy or computer systems. And finally, I can work as a researcher in technology areas.",
+        "year": "2018 - 2023"
+      },
+      {
+        "title": "Cloud Computing Technician",
+        "level": "Diplomas",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-yellow-600",
+        "description": "As a Cloud Computing Technician, I focus on the development of technical-professional competencies related to the operation, requirements, administration, security and adaptation of the different levels of service and deployment, derived from the Cloud digital services model through information technologies.",
+        "link": "https://drive.google.com/file/d/1izTwdafg8Pu3C8y6_7jwANcJC4OHU6vD/view?usp=drive_link",
+        "year": "2024"
+      },
+      {
+        "title": "Installation of computer networks",
+        "level": "Technicians",
+        "institute": "SENA",
+        "bg": "bg-green-600",
+        "description": "As a computer network installation technician, I implemented the physical data and local wireless network according to design specifications and technical standards using computer tools according to the information management needs. In addition, I am able to assemble internal electrical installations in accordance with current regulations.",
+        "link": "https://drive.google.com/file/d/1NhPZp9cFPx2f7GVF7iTGlCMGQDPgGpqx/view?usp=drive_link",
+        "year": "2017"
+      },
+      {
+        "title": "Server computer security technician",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1Eip18wN5JoZwh1u-g9tg2PaCfreq_NNX/view?usp=drive_link",
+        "description": "As a server security technician, I safeguard the integrity of the information stored and processed on the server, establishing a correct access control for the use of software. I understand the operation of the Linux operating system of a server and manage its services. I develop and implement a risk control plan to manage events that may affect the performance or quality of stored information. I follow the rules of the open source community with responsibility and honesty, as well as the relevant health and safety measures for the care of their welfare in the performance of their duties.",
+        "year": "2024"
+      },
+      {
+        "title": "Cloud application developer",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/176YDXQmYI39yTj7lQdh8u2BpD-H9J2Nr/view?usp=drive_link",
+        "description": "As a cloud application developer I am able to: perform the requirements engineering process, use third-party frameworks to implement functionalities, use a platform for back-end development and deployment of applications, and use tools for project versioning.",
+        "year": "2024"
+      },
+      {
+        "title": "Cloud Security Technician",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1ovciyr5z88NTf0FJGCUXSdgotU_tAYxy/view?usp=drive_link",
+        "description": "As a cloud security technician I safeguard the integrity of the information processed in a private cloud infrastructure within a company. I am able to: configure the server establishing a correct access control for the use of software, fully safeguard the information in the storage systems and control the flow of information through the network infrastructure. I understand the operation of the Linux operating system of a server and manage the services available along with the protocols and ports available for communication over the Internet.",
+        "year": "2024"
+      },
+      {
+        "title": "Cloud Administrator",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1lQ7LOnBt7yuPlk4VthC12mxPHQg2iMla/view?usp=drive_link",
+        "description": "As a cloud administrator I understand how cloud computing works and manage the different services offered based on this technology.  I am able to manage cloud access instances for each user in different environments, verify access to each cloud instance, monitor the system and set up alarms for unauthorized access via email or SMS messages.",
+        "year": "2024"
+      },
+      {
+        "title": "Cloud computing fundamentals",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1dgqqlvTaAM2phe6gsJFlaaxSmBcMcI_L/view?usp=drive_link",
+        "description": "With this training I understand how cloud computing works and the advantages of the different services offered based on this technology; in addition, I know the fundamentals of cloud architecture and the business models that derive from it. I am able to identify the selection variables to register virtual machines, understand the architecture of the data centers that host the cloud, migrate application projects in their dedicated instance to an instance in the cloud, ensure the availability of the application in the cloud in its different degrees, know the new technologies implemented in the ICT sector such as IoT and Big Data.",
+        "year": "2024"
+      },
+      {
+        "title": "Virtualization fundamentals",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1xcmLf3Zll7QxVvLtYxH1c9_xhEkpBsre/view?usp=drive_link",
+        "description": "With this training I understand the features of the technology such as hypervisor, virtual machines, system migration, storage management and networking. I am able to configure a virtual machine with operating system and a virtual work environment. In addition, I know the main applications within a company and the profiles of the human resources needed to implement this technological proposal.",
+        "year": "2024"
+      },
+      {
+        "title": "Cloud infrastructure services advisor",
+        "level": "Courses",
+        "institute": "Carlos Slim Foundation",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1JCFgMJiQOERg7naJUW-axn2I_TsYd1o_/view?usp=drive_link",
+        "description": "As a cloud computing infrastructure consultant I select, integrate and manage the resources offered by a provider's platform to host different applications, so I analyze the life cycle in the implementation of the service. I understand how unified and distributed computing works. I am able to choose the compute, storage and network technology according to the client's requirements. And finally, I guarantee the quality of the infrastructure service by responding to the scalability, flexibility, availability and security demanded.",
+        "year": "2024"
+      },
+      {
+        "title": "Introduction to cybersecurity",
+        "level": "Courses",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/7c4f8802-896f-4ccc-bb6a-185586f72e51",
+        "description": "With this training I understand the most common threats, attacks and vulnerabilities and apply basic cybersecurity concepts to protect digital life, personal or any other entity. I understand the biggest security challenges and the impact they generate in companies, governments and other institutions today.",
+        "year": "2023"
+      },
+      {
+        "title": "Basic Networking",
+        "level": "Courses",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/7a04ca58-6180-487f-a22f-bd700b985ad1",
+        "description": "With this training I understand the basics of networks and network devices, media and protocols, how they work, how devices send and receive data, types of network cabling, how IP addresses find information on the Internet, how transport and applications work. I am able to observe the flow of data across a network and configure devices to connect to networks using different applications and protocols to perform different tasks.",
+        "year": "2023"
+      },
+      {
+        "title": "Household electrical installations",
+        "level": "Courses",
+        "institute": "SENA",
+        "bg": "bg-purple-600",
+        "link": "https://drive.google.com/file/d/1QbNO-UGYl8TWcR02odTCZuqi8302JMJr/view?usp=drive_link",
+        "description": "With this training I can perform the planning and execution of the energy network in accordance with current regulations and the processes established by the company.",
+        "year": "2016"
+      }
+    ]
+  },
+  "LEARNMORE": "Learn more...",
+  "SEE_CERTIFICATE": "See certificate",
+  "TECNOLOGIES": "Technologies",
+  "SOURCE_CODE": "View source code",
+  "WEB_SITE": "Go to web site"
+}

@@ -10,6 +10,9 @@ interface Props {
   link?: string;
   year: string
 }
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 const { bg, institute, level, title, link, description, year } = Astro.props;
 ---
 
@@ -24,7 +27,7 @@ const { bg, institute, level, title, link, description, year } = Astro.props;
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ver certificado
+          {i18n.SEE_CERTIFICATE}
         </a>
       )
     }

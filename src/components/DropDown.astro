@@ -4,17 +4,16 @@ type NavItem = {
   url: string;
 };
 interface Props {
-  className: string;
   elements: NavItem[];
 }
 
-const { elements, className } = Astro.props;
+const { elements } = Astro.props;
 ---
 
-<div class=`group relative cursor-pointer ${className}`>
-  <div class="flex items-center justify-between gap-x-3">
+<div class="group relative cursor-pointer">
+  <div class="flex items-center justify-between">
     <a
-      class="menu-hover text-base font-medium text-black dark:text-white lg:mx-4"
+      class="menu-hover text-base font-medium text-black dark:text-white"
     >
       <slot />
     </a>

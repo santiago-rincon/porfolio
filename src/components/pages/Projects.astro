@@ -1,0 +1,28 @@
+---
+import MainContainer from "@components/MainContainer.astro";
+import ProjectInfo from "@components/ProjectInfo.astro";
+import Layout from "@layouts/Layout.astro";
+import { getI18n } from "src/i18n";
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+const projects = i18n.PROJECTS.LIST
+---
+
+<Layout
+  title="Proyectos"
+  description="Lista de proyectos realizados con diferentes técnologias"
+>
+  <MainContainer>
+    <h2
+      class="text-center text-3xl md:text-4xl font-bold mb-8"
+      transition:name="projects-title"
+    >
+      {i18n.PROJECTS.TITLE}
+    </h2>
+    {
+      projects.map(({title, code,description,imgs,link,tecnologies})=>(
+        <ProjectInfo title={title}, code={code} description={description} imgs={imgs} link={link} tecnologies={tecnologies}/>
+      ))
+    }
+  </MainContainer>
+</Layout>
