@@ -30,39 +30,39 @@
   "NAVBAR": [
     {
       "title": "Inicio",
-      "url": "/es"
+      "url": "/"
     },
     {
       "title": "Experiencia",
-      "url": "/es/experience"
+      "url": "/experience"
     },
     {
       "title": "Proyectos",
-      "url": "/es/projects"
+      "url": "/projects"
     },
     {
       "title": "Formación",
-      "url": "/es/education"
+      "url": "/education"
     }
   ],
   "BENTOS": {
     "EXPERIENCE": {
       "TITLE": "Experiencia laboral",
       "DESCRIPTION": "Me he desempeñado como docente y auxiliar de investigación en áreas relacionadas con la ingeniería y el desarrollo web.",
-      "LINK": "/es/experience"
+      "LINK": "/experience"
     },
     "EDUCATION": {
       "TITLE": "Formación académica",
       "DESCRIPTION1": "Actualmente, cuento con títulos de:",
       "DESCRIPTION2": "En centros de educación como Cisco, Fundación Carlos Slim y la Universidad de Cundinamarca.",
-      "LINK": "/es/education",
+      "LINK": "/education",
       "ITEMS": ["Pregrado", "Diplomados", "Técnicos", "Cursos"]
     },
     "PROJECTS": {
       "TITLE": "Proyectos",
       "DESCRIPTION1": "Con el transcurso de los años he desarrollado algunos proyectos en los cuales se encuentran páginas web, aplicaciones de línea de comandos y aplicaciones nativas.",
       "DESCRIPTION2": "Algunas de las tecnologías que he empleado han sido:",
-      "LINK": "/es/projects"
+      "LINK": "/projects"
     }
   },
   "PROJECTS": {

@@ -5,7 +5,11 @@ import Languages from "@icons/Languages.astro";
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 const navItems = i18n.NAVBAR;
-const { pathname } = Astro.url;
+let [, ...path] = Astro.url.pathname.split("/");
+if (path[0] === "en") {
+  [, ...path] = path;
+}
+console.log(path);
 ---
 
 <header
@@ -26,11 +30,11 @@ const { pathname } = Astro.url;
     }
     <DropDown
       elements={[
-        { title: "Español", url: `${pathname.replace('en','es')}` },
-        { title: "English", url: `${pathname.replace('es','en')}` },
+        { title: "Español", url: `/${path}` },
+        { title: "English", url: `/en/${path}` },
       ]}
     >
-      <Languages/>
+      <Languages />
     </DropDown>
   </nav>
 </header>
