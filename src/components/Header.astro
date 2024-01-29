@@ -30,8 +30,8 @@ console.log(path);
     }
     <DropDown
       elements={[
-        { title: "Español", url: `/${path}` },
-        { title: "English", url: `/en/${path}` },
+        { title: "Español", url: `/${path.join('/')}` },
+        { title: "English", url: `/en/${path.join('/')}` },
       ]}
     >
       <Languages />
