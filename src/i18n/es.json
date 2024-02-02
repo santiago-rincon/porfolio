@@ -156,6 +156,15 @@
         "year": "2017"
       },
       {
+        "title": "Hacker ético",
+        "level": "Curso",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/0897736b-1b10-4b59-85ea-747cc3a183bf",
+        "description": "En esta formación adquirí un conjunto de habilidades de hacker ético y una sólida comprensión de la seguridad ofensiva. Estoy en la capacidad de determinar el alcance, ejecutar e informar sobre las evaluaciones de vulnerabilidades, al tiempo que recomendar estrategias de mitigación. Además, puedo implementar de forma más eficaz los controles de seguridad y supervisar; analizar y responder a las amenazas de seguridad actuales por medio de los resultados del uso de diferentes herramientas para recomendar estrategias de mitigación.",
+        "year": "2024"
+      },
+      {
         "title": "Técnico en seguridad informática de servidores",
         "level": "Curso",
         "institute": "Fundación Carlos Slim",

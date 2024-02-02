@@ -156,6 +156,15 @@
         "year": "2017"
       },
       {
+        "title": "Ethical Hacker",
+        "level": "Courses",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/0897736b-1b10-4b59-85ea-747cc3a183bf",
+        "description": "In this training I acquired an ethical hacker skill set and a solid understanding of offensive security. I am able to scope, execute and report on vulnerability assessments while recommending mitigation strategies. In addition, I am able to more effectively implement security controls and monitor; analyze and respond to current security threats through the results of using different tools to recommend mitigation strategies.",
+        "year": "2024"
+      },
+      {
         "title": "Server computer security technician",
         "level": "Courses",
         "institute": "Carlos Slim Foundation",
