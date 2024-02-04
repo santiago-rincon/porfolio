@@ -1,17 +1,20 @@
 ---
+import { getI18n } from "src/i18n";
 import AngularPill from "@icons/pills/AngularPill.astro";
 import BootstrapPill from "@icons/pills/BootstrapPill.astro";
+import Carousel from "./Carousel.astro";
 import FirebasePill from "@icons/pills/FirebasePill.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
 import GitPill from "@icons/pills/GitPill.astro";
 import IonicPill from "@icons/pills/IonicPill.astro";
 import JavascriptPill from "@icons/pills/JavascriptPill.astro";
 import PythonPill from "@icons/pills/PythonPill.astro";
+import ReactPill from "@icons/pills/ReactPill.astro";
 import SocialPill from "@components/SocialPill.astro";
 import TailwindPill from "@icons/pills/TailwindPill.astro";
 import TypescriptPill from "@icons/pills/TypescriptPill.astro";
 import Www from "@icons/Www.astro";
-import Carousel from "./Carousel.astro";
+import ZustandPill from "@icons/pills/ZustandPill.astro";
 
 interface Props {
   title: string;
@@ -22,7 +25,6 @@ interface Props {
   link?: string;
 }
 const { code, description, imgs, tecnologies, title, link } = Astro.props;
-import { getI18n } from "src/i18n";
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 ---
@@ -55,19 +57,24 @@ const i18n = getI18n({ currentLocale });
             return <JavascriptPill />;
           case "Python":
             return <PythonPill />;
+          case "React":
+            return <ReactPill />;
           case "Tailwind":
             return <TailwindPill />;
           case "Typescript":
             return <TypescriptPill />;
+          case "Zustand":
+            return <ZustandPill />;
         }
       })
     }
   </div>
-  <Carousel images={imgs}/>
+  <Carousel images={imgs} />
   <!-- <img src={img} alt=`Preview of ${title}` class=""/> -->
   <div class="flex gap-x-3 gap-y-1 flex-wrap mb-6">
     <SocialPill href={code} target>
-      <GithubIcon class="size-5  md:size-6" /> {i18n.SOURCE_CODE}
+      <GithubIcon class="size-5 md:size-6" />
+      {i18n.SOURCE_CODE}
     </SocialPill>
     {
       link && (

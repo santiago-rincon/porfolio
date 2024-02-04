@@ -12,6 +12,8 @@ import SocialPill from "@components/SocialPill.astro";
 import Tailwind from "@icons/tecnologies/Tailwind.astro";
 import Typescript from "@icons/tecnologies/Typescript.astro";
 import { getI18n } from "src/i18n";
+import React from "@icons/tecnologies/React.astro";
+import Zustand from "@icons/tecnologies/Zustand.astro";
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 ---
@@ -76,6 +78,11 @@ const i18n = getI18n({ currentLocale });
     </Pill>
   </li>
   <li>
+    <Pill class="bg-[#09b4d2] border-[#09b4d2] text-[#09b4d2]">
+      <React class="size-4" /> React
+    </Pill>
+  </li>
+  <li>
     <Pill class="bg-[#17b9b9] border-[#17b9b9] text-[#17b9b9]">
       <Tailwind class="size-4" /> TailwindCSS
     </Pill>
@@ -83,6 +90,11 @@ const i18n = getI18n({ currentLocale });
   <li>
     <Pill class="bg-[#3178c6] border-[#3178c6] text-[#3178c6]">
       <Typescript class="size-4" /> Typescript
+    </Pill>
+  </li>
+  <li>
+    <Pill class="bg-[#b6a596] border-[#b6a596] text-[#b6a596]">
+      <Zustand class="size-4" /> Zustand
     </Pill>
   </li>
 </ul>

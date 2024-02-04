@@ -111,6 +111,25 @@
         "link": "https://transport-app-26.web.app/"
       },
       {
+        "title": "Screen Recorder",
+        "description": "Aplicación web para grabar la pantalla del equipo soportada por diferentes navegadores haciendo uso de la API MediaRecorder de JavaScript. Creada con React y estilizada con TailwindCSS con soporte a modo claro y oscuro, además del uso de Zustand para el manejo del estado global de la aplicación.",
+        "imgs": [
+          "/recorder.webp",
+          "/recorder1.webp",
+          "/recorder2.webp"
+        ],
+        "tecnologies": [
+          "Git",
+          "Javascript",
+          "React",
+          "Tailwind",
+          "Typescript",
+          "Zustand"
+        ],
+        "code": "https://github.com/santiago-rincon/screen_recorder",
+        "link": "https://screen-recorder-psi-eosin.vercel.app/"
+      },
+      {
         "title": "PDFPy",
         "description": "Pdfpy es una aplicación de línea de comandos (CLI) para la manipulación local de archivos PDF hecha en Python con la librería PyPDF2 compatible con Windows, Mac y Linux. Permite unir o separar archivos, leer o escribir metadatos en los archivos y encriptar o desencriptar archivos.",
         "imgs": ["/pdfpy.webp", "/pdfpy1.webp"],
