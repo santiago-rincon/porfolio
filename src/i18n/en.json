@@ -175,6 +175,15 @@
         "year": "2017"
       },
       {
+        "title": "Endpoint Security",
+        "level": "Courses",
+        "institute": "Cisco",
+        "bg": "bg-purple-600",
+        "link": "https://www.credly.com/badges/77d343ed-6012-4cd3-8752-c41e375125a0",
+        "description": "With this training I have the ability to assess the network, operating systems and endpoints for vulnerabilities, and I have the skills to maintain the integrity, confidentiality and availability of the network and data.",
+        "year": "2024"
+      },
+      {
         "title": "Ethical Hacker",
         "level": "Courses",
         "institute": "Cisco",
