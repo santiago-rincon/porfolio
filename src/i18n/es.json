@@ -111,13 +111,25 @@
         "link": "https://transport-app-26.web.app/"
       },
       {
+        "title": "Readme generator",
+        "description": "Aplicación desarrollada con Astro y React para generar archivos Readme para perfiles de GitHub. La aplicación transforma el código HTML generado a Markdown por medio de la biblioteca de JavaScript showdown. Estilada 100% con TailwindCSS, manejo de estados globales con Zustand y uso de componentes Shadcn.",
+        "imgs": ["/generator.webp", "/generator1.webp", "/generator2.webp"],
+        "tecnologies": [
+          "Astro",
+          "Git",
+          "Javascript",
+          "React",
+          "Tailwind",
+          "Typescript",
+          "Zustand"
+        ],
+        "code": "https://github.com/santiago-rincon/readme_generator",
+        "link": "https://readme-generator-flax.vercel.app/"
+      },
+      {
         "title": "Screen Recorder",
         "description": "Aplicación web para grabar la pantalla del equipo soportada por diferentes navegadores haciendo uso de la API MediaRecorder de JavaScript. Creada con React y estilizada con TailwindCSS con soporte a modo claro y oscuro, además del uso de Zustand para el manejo del estado global de la aplicación.",
-        "imgs": [
-          "/recorder.webp",
-          "/recorder1.webp",
-          "/recorder2.webp"
-        ],
+        "imgs": ["/recorder.webp", "/recorder1.webp", "/recorder2.webp"],
         "tecnologies": [
           "Git",
           "Javascript",

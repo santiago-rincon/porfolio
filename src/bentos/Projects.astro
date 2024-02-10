@@ -1,19 +1,19 @@
 ---
+import { getI18n } from "src/i18n";
 import AngularPill from "@icons/pills/AngularPill.astro";
-import Bootstrap from "@icons/tecnologies/Bootstrap.astro";
-import Firebase from "@icons/tecnologies/Firebase.astro";
-import Git from "@icons/tecnologies/Git.astro";
-import Ionic from "@icons/tecnologies/Ionic.astro";
-import Javascript from "@icons/tecnologies/Javascript.astro";
-import Pill from "@components/Pill.astro";
-import Python from "@icons/tecnologies/Python.astro";
+import AstroPill from "@icons/pills/AstroPill.astro";
+import BootstrapPill from "@components/icons/pills/BootstrapPill.astro";
+import FirebasePill from "@components/icons/pills/FirebasePill.astro";
+import GitPill from "@components/icons/pills/GitPill.astro";
+import IonicPill from "@components/icons/pills/IonicPill.astro";
+import JavascriptPill from "@components/icons/pills/JavascriptPill.astro";
+import PythonPill from "@components/icons/pills/PythonPill.astro";
+import ReactPill from "@components/icons/pills/ReactPill.astro";
 import RightArrow from "@icons/RightArrow.astro";
 import SocialPill from "@components/SocialPill.astro";
-import Tailwind from "@icons/tecnologies/Tailwind.astro";
-import Typescript from "@icons/tecnologies/Typescript.astro";
-import { getI18n } from "src/i18n";
-import React from "@icons/tecnologies/React.astro";
-import Zustand from "@icons/tecnologies/Zustand.astro";
+import TailwindPill from "@components/icons/pills/TailwindPill.astro";
+import TypescriptPill from "@components/icons/pills/TypescriptPill.astro";
+import ZustandPill from "@components/icons/pills/ZustandPill.astro";
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 ---
@@ -48,57 +48,39 @@ const i18n = getI18n({ currentLocale });
     <AngularPill />
   </li>
   <li>
-    <Pill class="bg-[#7e13f8] border-[#7e13f8] text-[#7e13f8]">
-      <Bootstrap class="size-4" /> Bootstrap
-    </Pill>
+    <AstroPill />
   </li>
   <li>
-    <Pill class="bg-[#fcca3f] border-[#fcca3f] text-[#fcca3f]">
-      <Firebase class="size-4" /> Firebase
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#de4c36] border-[#de4c36] text-[#de4c36]">
-      <Git class="size-4" /> Git
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#478aff] border-[#478aff] text-[#478aff]">
-      <Ionic class="size-4" /> Ionic
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#f0db4f] border-[#f0db4f] text-[#f0db4f]">
-      <Javascript class="size-4" /> JavaScript
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#0277bd] border-[#0277bd] text-[#0277bd]">
-      <Python class="size-4" /> Python
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#09b4d2] border-[#09b4d2] text-[#09b4d2]">
-      <React class="size-4" /> React
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#17b9b9] border-[#17b9b9] text-[#17b9b9]">
-      <Tailwind class="size-4" /> TailwindCSS
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#3178c6] border-[#3178c6] text-[#3178c6]">
-      <Typescript class="size-4" /> Typescript
-    </Pill>
-  </li>
-  <li>
-    <Pill class="bg-[#b6a596] border-[#b6a596] text-[#b6a596]">
-      <Zustand class="size-4" /> Zustand
-    </Pill>
+    <BootstrapPill />
+    <li>
+      <FirebasePill />
+    </li>
+    <li>
+      <GitPill />
+    </li>
+    <li>
+      <IonicPill />
+    </li>
+    <li>
+      <JavascriptPill />
+    </li>
+    <li>
+      <PythonPill />
+    </li>
+    <li>
+      <ReactPill />
+    </li>
+    <li>
+      <TailwindPill />
+    </li>
+    <li>
+      <TypescriptPill />
+    </li>
+    <li>
+      <ZustandPill />
+    </li>
   </li>
 </ul>
-
 <SocialPill href={i18n.BENTOS.PROJECTS.LINK} class="">
   {i18n.LEARNMORE}
   <RightArrow />

@@ -15,6 +15,7 @@ import TailwindPill from "@icons/pills/TailwindPill.astro";
 import TypescriptPill from "@icons/pills/TypescriptPill.astro";
 import Www from "@icons/Www.astro";
 import ZustandPill from "@icons/pills/ZustandPill.astro";
+import AstroPill from "./icons/pills/AstroPill.astro";
 
 interface Props {
   title: string;
@@ -45,6 +46,8 @@ const i18n = getI18n({ currentLocale });
         switch (tec) {
           case "Angular":
             return <AngularPill />;
+          case "Astro":
+            return <AstroPill />;
           case "Bootstrap":
             return <BootstrapPill />;
           case "Firebase":
