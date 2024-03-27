@@ -6,12 +6,13 @@ const { images } = Astro.props;
 ---
 
 <div
-  class="aspect-video w-full relative flex overflow-scroll overflow-y-hidden mb-3"
+  class="w-full relative flex overflow-scroll [scroll-snap-type:x_mandatory]"
 >
   {
     images.map((img) => (
       <img
         src={img}
+        loading="lazy"
         alt="Application image"
         class="w-full left-0 sticky object-cover [scroll-snap-align:center] rounded-lg"
       />

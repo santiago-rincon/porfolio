@@ -89,6 +89,28 @@
         "link": "https://app-coffee-gui.web.app/"
       },
       {
+				"title": "Management system for a barbershop",
+				"description": "Web application made as Freelancer for the management of shifts in a barbershop, this application is integrated with Firebase's Firestore service to store and manage shifts in real time. In addition, it uses the authentication and hosting service for user management and network exposure respectively.  Created with Angular and the primeng UI library.",
+				"imgs": [
+					"/medellin-style1.webp",
+					"/medellin-style.webp",
+					"/medellin-style2.webp",
+					"/medellin-style3.webp",
+					"/medellin-style4.webp"
+				],
+				"tecnologies": [
+					"Angular",
+					"Firebase",
+					"Git",
+					"Javascript",
+          "Primeng",
+					"Tailwind",
+					"Typescript"
+				],
+				"code": "https://github.com/santiago-rincon/medellin-style",
+				"link": "https://medellin-style-a2a4e.web.app/"
+			},
+      {
         "title": "Transportation application",
         "description": "Cross-platform application that integrates with Google Maps API to obtain real-time location, map rendering, search for the most optimal route between two selected points and search for places through the Geocoding API. Created and integrated with Angular, Ionic, Capacitor and Firebase for database usage, authentication and hosting.",
         "imgs": [
@@ -140,6 +162,20 @@
         ],
         "code": "https://github.com/santiago-rincon/screen_recorder",
         "link": "https://screen-recorder-psi-eosin.vercel.app/"
+      },
+      {
+        "title": "Advertising landing page",
+        "description": "Static web application to promote web design, created with Astro and styled with TailwindCSS with support for light and dark mode.",
+        "imgs": ["/landing1.webp", "/landing2.webp"],
+        "tecnologies": [
+          "Astro",
+          "Git",
+          "Javascript",
+          "Tailwind",
+          "Typescript"
+        ],
+        "code": "https://github.com/santiago-rincon/landing-page",
+        "link": "https://web-design-lac-three.vercel.app/"
       },
       {
         "title": "PDFPy",

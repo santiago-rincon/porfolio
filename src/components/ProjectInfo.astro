@@ -1,6 +1,7 @@
 ---
 import { getI18n } from "src/i18n";
 import AngularPill from "@icons/pills/AngularPill.astro";
+import AstroPill from "./icons/pills/AstroPill.astro";
 import BootstrapPill from "@icons/pills/BootstrapPill.astro";
 import Carousel from "./Carousel.astro";
 import FirebasePill from "@icons/pills/FirebasePill.astro";
@@ -8,6 +9,7 @@ import GithubIcon from "@icons/GithubIcon.astro";
 import GitPill from "@icons/pills/GitPill.astro";
 import IonicPill from "@icons/pills/IonicPill.astro";
 import JavascriptPill from "@icons/pills/JavascriptPill.astro";
+import PrimengPill from "@icons/pills/PrimengPill.astro";
 import PythonPill from "@icons/pills/PythonPill.astro";
 import ReactPill from "@icons/pills/ReactPill.astro";
 import SocialPill from "@components/SocialPill.astro";
@@ -15,14 +17,13 @@ import TailwindPill from "@icons/pills/TailwindPill.astro";
 import TypescriptPill from "@icons/pills/TypescriptPill.astro";
 import Www from "@icons/Www.astro";
 import ZustandPill from "@icons/pills/ZustandPill.astro";
-import AstroPill from "./icons/pills/AstroPill.astro";
 
 interface Props {
   title: string;
   description: string;
   imgs: string[];
   tecnologies: string[];
-  code: string;
+  code?: string;
   link?: string;
 }
 const { code, description, imgs, tecnologies, title, link } = Astro.props;
@@ -58,6 +59,8 @@ const i18n = getI18n({ currentLocale });
             return <IonicPill />;
           case "Javascript":
             return <JavascriptPill />;
+          case "Primeng":
+            return <PrimengPill />;
           case "Python":
             return <PythonPill />;
           case "React":
@@ -73,12 +76,15 @@ const i18n = getI18n({ currentLocale });
     }
   </div>
   <Carousel images={imgs} />
-  <!-- <img src={img} alt=`Preview of ${title}` class=""/> -->
-  <div class="flex gap-x-3 gap-y-1 flex-wrap mb-6">
-    <SocialPill href={code} target>
-      <GithubIcon class="size-5 md:size-6" />
-      {i18n.SOURCE_CODE}
-    </SocialPill>
+  <div class="flex gap-x-3 gap-y-1 flex-wrap mt-3 mb-6">
+    {
+      code && (
+        <SocialPill href={code} target>
+          <GithubIcon class="size-5 md:size-6" />
+          {i18n.SOURCE_CODE}
+        </SocialPill>
+      )
+    }
     {
       link && (
         <SocialPill href={link} target>
