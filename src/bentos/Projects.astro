@@ -14,6 +14,7 @@ import SocialPill from "@components/SocialPill.astro";
 import TailwindPill from "@components/icons/pills/TailwindPill.astro";
 import TypescriptPill from "@components/icons/pills/TypescriptPill.astro";
 import ZustandPill from "@components/icons/pills/ZustandPill.astro";
+import PrimengPill from "@components/icons/pills/PrimengPill.astro";
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 ---
@@ -63,6 +64,9 @@ const i18n = getI18n({ currentLocale });
     </li>
     <li>
       <JavascriptPill />
+    </li>
+    <li>
+      <PrimengPill />
     </li>
     <li>
       <PythonPill />
