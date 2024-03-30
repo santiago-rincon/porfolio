@@ -72,10 +72,10 @@
         "title": "App Coffee GUI",
         "description": "Aplicación web para el monitoreo de variables climáticas de una red inalámbrica de sensores en un cultivo de café. Creada e integrada con Angular y Firebase para la configuración remota de parámetros en la red de sensores, para autenticación y servicio de hosting.",
         "imgs": [
-          "/coffee.webp",
-          "/coffee1.webp",
-          "/coffee2.webp",
-          "/coffee3.webp"
+          "/coffee-gui/coffee.webp",
+          "/coffee-gui/coffee1.webp",
+          "/coffee-gui/coffee2.webp",
+          "/coffee-gui/coffee3.webp"
         ],
         "tecnologies": [
           "Angular",
@@ -92,11 +92,11 @@
         "title": "Sistema de gestión para una barbería",
         "description": "Aplicación web realizada como Freelancer para la gestión de turnos en una barbería, esta aplicación se integra con el servicio de Firestore de Firebase para almacenar y gestionar los turnos en tiempo real. Además, usa el servicio de autenticación y hosting para la gestión de usuarios y exposición a la red respectivamente.  Creada con Angular y la librería de UI primeng.",
         "imgs": [
-          "/medellin-style1.webp",
-          "/medellin-style.webp",
-          "/medellin-style2.webp",
-          "/medellin-style3.webp",
-          "/medellin-style4.webp"
+          "/medellin-style/medellin-style1.webp",
+          "/medellin-style/medellin-style.webp",
+          "/medellin-style/medellin-style2.webp",
+          "/medellin-style/medellin-style3.webp",
+          "/medellin-style/medellin-style4.webp"
         ],
         "tecnologies": [
           "Angular",
@@ -114,11 +114,11 @@
         "title": "Aplicación de transporte",
         "description": "Aplicación multiplataforma que se integra con la API de Google Maps para la obtención de la ubicación en tiempo real, renderización de mapas, búsqueda de la ruta más óptima entre dos puntos seleccionados y búsqueda de lugares a través  de la API Geocoding. Creada e integrada con Angular, Ionic, Capacitor y Firebase para el uso de base de datos, autenticación y hosting.",
         "imgs": [
-          "/transport1.webp",
-          "/transport.webp",
-          "/transport2.webp",
-          "/transport3.webp",
-          "/transport4.webp"
+          "/transport/transport1.webp",
+          "/transport/transport.webp",
+          "/transport/transport2.webp",
+          "/transport/transport3.webp",
+          "/transport/transport4.webp"
         ],
         "tecnologies": [
           "Angular",
@@ -135,7 +135,11 @@
       {
         "title": "Readme generator",
         "description": "Aplicación desarrollada con Astro y React para generar archivos Readme para perfiles de GitHub. La aplicación transforma el código HTML generado a Markdown por medio de la biblioteca de JavaScript showdown. Estilada 100% con TailwindCSS, manejo de estados globales con Zustand y uso de componentes Shadcn.",
-        "imgs": ["/generator.webp", "/generator1.webp", "/generator2.webp"],
+        "imgs": [
+          "/readme/generator.webp",
+          "/readme/generator1.webp",
+          "/readme/generator2.webp"
+        ],
         "tecnologies": [
           "Astro",
           "Git",
@@ -151,7 +155,11 @@
       {
         "title": "Screen Recorder",
         "description": "Aplicación web para grabar la pantalla del equipo soportada por diferentes navegadores haciendo uso de la API MediaRecorder de JavaScript. Creada con React y estilizada con TailwindCSS con soporte a modo claro y oscuro, además del uso de Zustand para el manejo del estado global de la aplicación.",
-        "imgs": ["/recorder.webp", "/recorder1.webp", "/recorder2.webp"],
+        "imgs": [
+          "/screen/recorder.webp",
+          "/screen/recorder1.webp",
+          "/screen/recorder2.webp"
+        ],
         "tecnologies": [
           "Git",
           "Javascript",
@@ -166,7 +174,7 @@
       {
         "title": "Landing de publicidad",
         "description": "Aplicación web estática para promocionar el diseño de páginas web, creada con Astro y estilizada con TailwindCSS con soporte a modo claro y oscuro.",
-        "imgs": ["/landing1.webp", "/landing2.webp"],
+        "imgs": ["/landing/landing1.webp", "/landing/landing2.webp"],
         "tecnologies": ["Astro", "Git", "Javascript", "Tailwind", "Typescript"],
         "code": "https://github.com/santiago-rincon/landing-page",
         "link": "https://web-design-lac-three.vercel.app/"
@@ -174,14 +182,14 @@
       {
         "title": "PDFPy",
         "description": "Pdfpy es una aplicación de línea de comandos (CLI) para la manipulación local de archivos PDF hecha en Python con la librería PyPDF2 compatible con Windows, Mac y Linux. Permite unir o separar archivos, leer o escribir metadatos en los archivos y encriptar o desencriptar archivos.",
-        "imgs": ["/pdfpy.webp", "/pdfpy1.webp"],
+        "imgs": ["/pdf/pdfpy.webp", "/pdf/pdfpy1.webp"],
         "tecnologies": ["Git", "Python"],
         "code": "https://github.com/santiago-rincon/pdfpy"
       },
       {
         "title": "Background remover",
         "description": "Background remover es una aplicación de línea de comandos (CLI) para eliminar el fondo de imágenes con formatos png, jpg y jpeg hecha en Python con la librería rembg. Soporta el tratamiento de imágenes individuales o de todos los archivos de una carpeta.",
-        "imgs": ["/bg.webp", "/bg1.webp"],
+        "imgs": ["/bg/bg.webp", "/bg/bg1.webp"],
         "tecnologies": ["Git", "Python"],
         "code": "https://github.com/santiago-rincon/bgremoverpy"
       },
@@ -189,11 +197,11 @@
         "title": "QRPy",
         "description": "QRpy es una aplicación de línea de comandos (CLI) para la creación local de códigos QR en formato \".png\" o \".svg\" hecha en Python con la librería qrcode compatible con Windows, Mac y Linux.",
         "imgs": [
-          "/qr1.webp",
-          "/qr2.webp",
-          "/qr3.webp",
-          "/qr4.webp",
-          "/qr5.webp"
+          "/qr/qr1.webp",
+          "/qr/qr2.webp",
+          "/qr/qr3.webp",
+          "/qr/qr4.webp",
+          "/qr/qr5.webp"
         ],
         "tecnologies": ["Git", "Python"],
         "code": "https://github.com/santiago-rincon/qrpy"

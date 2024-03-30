@@ -72,10 +72,10 @@
         "title": "App Coffee GUI",
         "description": "Web application for monitoring climatic variables of a wireless sensor network in a coffee crop. Created and integrated with Angular and Firebase for remote configuration of parameters in the sensor network, for authentication and hosting service.",
         "imgs": [
-          "/coffee.webp",
-          "/coffee1.webp",
-          "/coffee2.webp",
-          "/coffee3.webp"
+          "/coffee-gui/coffee.webp",
+          "/coffee-gui/coffee1.webp",
+          "/coffee-gui/coffee2.webp",
+          "/coffee-gui/coffee3.webp"
         ],
         "tecnologies": [
           "Angular",
@@ -92,11 +92,11 @@
         "title": "Management system for a barbershop",
         "description": "Web application made as Freelancer for the management of shifts in a barbershop, this application is integrated with Firebase's Firestore service to store and manage shifts in real time. In addition, it uses the authentication and hosting service for user management and network exposure respectively.  Created with Angular and the primeng UI library.",
         "imgs": [
-          "/medellin-style1.webp",
-          "/medellin-style.webp",
-          "/medellin-style2.webp",
-          "/medellin-style3.webp",
-          "/medellin-style4.webp"
+          "/medellin-style/medellin-style1.webp",
+          "/medellin-style/medellin-style.webp",
+          "/medellin-style/medellin-style2.webp",
+          "/medellin-style/medellin-style3.webp",
+          "/medellin-style/medellin-style4.webp"
         ],
         "tecnologies": [
           "Angular",
@@ -114,11 +114,11 @@
         "title": "Transportation application",
         "description": "Cross-platform application that integrates with Google Maps API to obtain real-time location, map rendering, search for the most optimal route between two selected points and search for places through the Geocoding API. Created and integrated with Angular, Ionic, Capacitor and Firebase for database usage, authentication and hosting.",
         "imgs": [
-          "/transport1.webp",
-          "/transport.webp",
-          "/transport2.webp",
-          "/transport3.webp",
-          "/transport4.webp"
+          "/transport/transport1.webp",
+          "/transport/transport.webp",
+          "/transport/transport2.webp",
+          "/transport/transport3.webp",
+          "/transport/transport4.webp"
         ],
         "tecnologies": [
           "Angular",
@@ -135,7 +135,11 @@
       {
         "title": "Readme generator",
         "description": "Application developed with Astro and React to generate Readme files for GitHub profiles. The application transforms the generated HTML code to Markdown using the JavaScript showdown library. Styled 100% with TailwindCSS, global state handling with Zustand and use of Shadcn components.",
-        "imgs": ["/generator.webp", "/generator1.webp", "/generator2.webp"],
+        "imgs": [
+          "/readme/generator.webp",
+          "/readme/generator1.webp",
+          "/readme/generator2.webp"
+        ],
         "tecnologies": [
           "Astro",
           "Git",
@@ -151,7 +155,11 @@
       {
         "title": "Screen Recorder",
         "description": "Web application to record the computer screen supported by different browsers making use of the JavaScript MediaRecorder API. Created with React and styled with TailwindCSS with support for light and dark mode, plus the use of Zustand to manage the global state of the application.",
-        "imgs": ["/recorder.webp", "/recorder1.webp", "/recorder2.webp"],
+        "imgs": [
+          "/screen/recorder.webp",
+          "/screen/recorder1.webp",
+          "/screen/recorder2.webp"
+        ],
         "tecnologies": [
           "Git",
           "Javascript",
@@ -166,7 +174,7 @@
       {
         "title": "Advertising landing page",
         "description": "Static web application to promote web design, created with Astro and styled with TailwindCSS with support for light and dark mode.",
-        "imgs": ["/landing1.webp", "/landing2.webp"],
+        "imgs": ["/landing/landing1.webp", "/landing/landing2.webp"],
         "tecnologies": ["Astro", "Git", "Javascript", "Tailwind", "Typescript"],
         "code": "https://github.com/santiago-rincon/landing-page",
         "link": "https://web-design-lac-three.vercel.app/"
@@ -174,14 +182,14 @@
       {
         "title": "PDFPy",
         "description": "Pdfpy is a command line application (CLI) for local manipulation of PDF files made in Python with the PyPDF2 library compatible with Windows, Mac and Linux. It allows to join or split files, read or write metadata in files and encrypt or decrypt files.",
-        "imgs": ["/pdfpy.webp", "/pdfpy1.webp"],
+        "imgs": ["/pdf/pdfpy.webp", "/pdf/pdfpy1.webp"],
         "tecnologies": ["Git", "Python"],
         "code": "https://github.com/santiago-rincon/pdfpy"
       },
       {
         "title": "Background remover",
         "description": "Background remover is a command line application (CLI) to remove the background of images in png, jpg and jpeg formats made in Python with the rembg library. It supports processing of individual images or all files in a folder.",
-        "imgs": ["/bg.webp", "/bg1.webp"],
+        "imgs": ["/bg/bg.webp", "/bg/bg1.webp"],
         "tecnologies": ["Git", "Python"],
         "code": "https://github.com/santiago-rincon/bgremoverpy"
       },
@@ -189,11 +197,11 @@
         "title": "QRPy",
         "description": "QRpy is a command line application (CLI) for local creation of QR codes in .png or .svg format made in Python with the qrcode library compatible with Windows, Mac and Linux.",
         "imgs": [
-          "/qr1.webp",
-          "/qr2.webp",
-          "/qr3.webp",
-          "/qr4.webp",
-          "/qr5.webp"
+          "/qr/qr1.webp",
+          "/qr/qr2.webp",
+          "/qr/qr3.webp",
+          "/qr/qr4.webp",
+          "/qr/qr5.webp"
         ],
         "tecnologies": ["Git", "Python"],
         "code": "https://github.com/santiago-rincon/qrpy"
