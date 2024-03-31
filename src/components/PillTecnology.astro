@@ -8,7 +8,8 @@ const { color, img, name, size } = tecnology;
 ---
 
 <span
-  class=`flex items-center justify-center gap-x-2 max-w-fit bg-opacity-10 text-sm font-medium px-2.5 py-0.5 rounded-xl border border-opacity-50 bg-[${color}] border-[${color}] text-[${color}]`
+  class="flex items-center justify-center gap-x-2 max-w-fit text-sm font-medium px-2.5 py-0.5 rounded-xl border border-opacity-50"
+  style={`color:${color}; background-color: ${color}1A; border-color:${color}`}
 >
   <img class={size} src={img} alt={`Icono de ${name}`} />
   {name}
