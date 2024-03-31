@@ -1,22 +1,11 @@
 ---
 import { getI18n } from "src/i18n";
-import AngularPill from "@icons/pills/AngularPill.astro";
-import AstroPill from "./icons/pills/AstroPill.astro";
-import BootstrapPill from "@icons/pills/BootstrapPill.astro";
-import Carousel from "./Carousel.astro";
-import FirebasePill from "@icons/pills/FirebasePill.astro";
+import Carousel from "@components/Carousel.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
-import GitPill from "@icons/pills/GitPill.astro";
-import IonicPill from "@icons/pills/IonicPill.astro";
-import JavascriptPill from "@icons/pills/JavascriptPill.astro";
-import PrimengPill from "@icons/pills/PrimengPill.astro";
-import PythonPill from "@icons/pills/PythonPill.astro";
-import ReactPill from "@icons/pills/ReactPill.astro";
+import PillTecnology from "@components/PillTecnology.astro";
 import SocialPill from "@components/SocialPill.astro";
-import TailwindPill from "@icons/pills/TailwindPill.astro";
-import TypescriptPill from "@icons/pills/TypescriptPill.astro";
+import { tecnologies as tec } from "@const/tecnologies";
 import Www from "@icons/Www.astro";
-import ZustandPill from "@icons/pills/ZustandPill.astro";
 
 interface Props {
   title: string;
@@ -43,35 +32,10 @@ const i18n = getI18n({ currentLocale });
   </p>
   <div class="flex flex-wrap gap-3 mb-5">
     {
-      tecnologies.map((tec) => {
-        switch (tec) {
-          case "Angular":
-            return <AngularPill />;
-          case "Astro":
-            return <AstroPill />;
-          case "Bootstrap":
-            return <BootstrapPill />;
-          case "Firebase":
-            return <FirebasePill />;
-          case "Git":
-            return <GitPill />;
-          case "Ionic":
-            return <IonicPill />;
-          case "Javascript":
-            return <JavascriptPill />;
-          case "Primeng":
-            return <PrimengPill />;
-          case "Python":
-            return <PythonPill />;
-          case "React":
-            return <ReactPill />;
-          case "Tailwind":
-            return <TailwindPill />;
-          case "Typescript":
-            return <TypescriptPill />;
-          case "Zustand":
-            return <ZustandPill />;
-        }
+      tecnologies.map((t) => {
+        const pill = tec.find((tecno) => tecno.name === t);
+        if (pill === undefined) return;
+        return <PillTecnology tecnology={pill} />;
       })
     }
   </div>

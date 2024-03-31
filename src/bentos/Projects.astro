@@ -1,22 +1,13 @@
 ---
 import { getI18n } from "src/i18n";
-import AngularPill from "@icons/pills/AngularPill.astro";
-import AstroPill from "@icons/pills/AstroPill.astro";
-import BootstrapPill from "@components/icons/pills/BootstrapPill.astro";
-import FirebasePill from "@components/icons/pills/FirebasePill.astro";
-import GitPill from "@components/icons/pills/GitPill.astro";
-import IonicPill from "@components/icons/pills/IonicPill.astro";
-import JavascriptPill from "@components/icons/pills/JavascriptPill.astro";
-import PythonPill from "@components/icons/pills/PythonPill.astro";
-import ReactPill from "@components/icons/pills/ReactPill.astro";
-import RightArrow from "@icons/RightArrow.astro";
+import { tecnologies as tec } from "@const/tecnologies";
+import PillTecnology from "@components/PillTecnology.astro";
+import RightArrow from "@components/icons/RightArrow.astro";
 import SocialPill from "@components/SocialPill.astro";
-import TailwindPill from "@components/icons/pills/TailwindPill.astro";
-import TypescriptPill from "@components/icons/pills/TypescriptPill.astro";
-import ZustandPill from "@components/icons/pills/ZustandPill.astro";
-import PrimengPill from "@components/icons/pills/PrimengPill.astro";
+import type { Tecnology } from "@types";
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
+const tecnologies: Tecnology[] = tec;
 ---
 
 <h2
@@ -45,45 +36,13 @@ const i18n = getI18n({ currentLocale });
   </div>
 </div>
 <ul class="flex flex-wrap gap-3 mb-2">
-  <li>
-    <AngularPill />
-  </li>
-  <li>
-    <AstroPill />
-  </li>
-  <li>
-    <BootstrapPill />
-    <li>
-      <FirebasePill />
-    </li>
-    <li>
-      <GitPill />
-    </li>
-    <li>
-      <IonicPill />
-    </li>
-    <li>
-      <JavascriptPill />
-    </li>
-    <li>
-      <PrimengPill />
-    </li>
-    <li>
-      <PythonPill />
-    </li>
-    <li>
-      <ReactPill />
-    </li>
-    <li>
-      <TailwindPill />
-    </li>
-    <li>
-      <TypescriptPill />
-    </li>
-    <li>
-      <ZustandPill />
-    </li>
-  </li>
+  {
+    tecnologies.map((tecnology) => (
+      <li>
+        <PillTecnology tecnology={tecnology} />
+      </li>
+    ))
+  }
 </ul>
 <SocialPill href={i18n.BENTOS.PROJECTS.LINK} class="">
   {i18n.LEARNMORE}

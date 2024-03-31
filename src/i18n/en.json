@@ -82,8 +82,8 @@
           "Bootstrap",
           "Firebase",
           "Git",
-          "Javascript",
-          "Typescript"
+          "JavaScript",
+          "TypeScript"
         ],
         "code": "https://github.com/santiago-rincon/app_coffee_gui",
         "link": "https://app-coffee-gui.web.app/"
@@ -102,10 +102,10 @@
           "Angular",
           "Firebase",
           "Git",
-          "Javascript",
+          "JavaScript",
           "Primeng",
           "Tailwind",
-          "Typescript"
+          "TypeScript"
         ],
         "code": "https://github.com/santiago-rincon/medellin-style",
         "link": "https://medellin-style-a2a4e.web.app/"
@@ -125,9 +125,9 @@
           "Firebase",
           "Git",
           "Ionic",
-          "Javascript",
+          "JavaScript",
           "Tailwind",
-          "Typescript"
+          "TypeScript"
         ],
         "code": "https://github.com/santiago-rincon/travel_app",
         "link": "https://transport-app-26.web.app/"
@@ -143,10 +143,10 @@
         "tecnologies": [
           "Astro",
           "Git",
-          "Javascript",
+          "JavaScript",
           "React",
           "Tailwind",
-          "Typescript",
+          "TypeScript",
           "Zustand"
         ],
         "code": "https://github.com/santiago-rincon/readme_generator",
@@ -162,10 +162,10 @@
         ],
         "tecnologies": [
           "Git",
-          "Javascript",
+          "JavaScript",
           "React",
           "Tailwind",
-          "Typescript",
+          "TypeScript",
           "Zustand"
         ],
         "code": "https://github.com/santiago-rincon/screen_recorder",
@@ -175,7 +175,7 @@
         "title": "Advertising landing page",
         "description": "Static web application to promote web design, created with Astro and styled with TailwindCSS with support for light and dark mode.",
         "imgs": ["/landing/landing1.webp", "/landing/landing2.webp"],
-        "tecnologies": ["Astro", "Git", "Javascript", "Tailwind", "Typescript"],
+        "tecnologies": ["Astro", "Git", "JavaScript", "Tailwind", "TypeScript"],
         "code": "https://github.com/santiago-rincon/landing-page",
         "link": "https://web-design-lac-three.vercel.app/"
       },

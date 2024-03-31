@@ -8,6 +8,8 @@
       "@icons/*": ["./src/components/icons/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@bentos/*": ["./src/bentos/*"],
+      "@types": ["./src/types.d.ts"],
+      "@const/*": ["./src/const/*"]
     }
   }
 }

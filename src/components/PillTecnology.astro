@@ -1,0 +1,15 @@
+---
+import { type Tecnology } from "@types";
+interface Props {
+  tecnology: Tecnology;
+}
+const { tecnology } = Astro.props;
+const { color, img, name, size } = tecnology;
+---
+
+<span
+  class=`flex items-center justify-center gap-x-2 max-w-fit bg-opacity-10 text-sm font-medium px-2.5 py-0.5 rounded-xl border border-opacity-50 bg-[${color}] border-[${color}] text-[${color}]`
+>
+  <img class={size} src={img} alt={`Icono de ${name}`} />
+  {name}
+</span>
