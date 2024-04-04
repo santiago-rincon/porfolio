@@ -153,6 +153,26 @@
         "link": "https://readme-generator-flax.vercel.app/"
       },
       {
+        "title": "QR generator",
+        "description": "Aplicación desarrollada con React para generar códigos QR de diferentes tipos. La aplicación se comunica con un back-end desarrollado en Flask, recibiendo un texto y devolviendo el código QR en base 64 generado por la librería qrcode de Python.  Estilada 100% con TailwindCSS con soporte para modo claro y oscuro.",
+        "imgs": [
+          "/qr-generator/generator.webp",
+          "/qr-generator/generator1.webp"
+        ],
+        "tecnologies": [
+          "Docker",
+          "Flask",
+          "Git",
+          "JavaScript",
+          "Python",
+          "React",
+          "Tailwind",
+          "TypeScript"
+        ],
+        "code": "https://github.com/santiago-rincon/qr-generator",
+        "link": "https://qr-generator-nu-smoky.vercel.app/"
+      },
+      {
         "title": "Screen Recorder",
         "description": "Aplicación web para grabar la pantalla del equipo soportada por diferentes navegadores haciendo uso de la API MediaRecorder de JavaScript. Creada con React y estilizada con TailwindCSS con soporte a modo claro y oscuro, además del uso de Zustand para el manejo del estado global de la aplicación.",
         "imgs": [

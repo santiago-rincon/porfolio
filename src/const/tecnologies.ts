@@ -20,9 +20,21 @@ export const tecnologies: Tecnology[] = [
     size: "size-4",
   },
   {
+    name: "Docker",
+    color: "#008fe2",
+    img: "/tecnologies/docker.svg",
+    size: "size-4",
+  },
+  {
     name: "Firebase",
     color: "#fcca3f",
     img: "/tecnologies/firebase.svg",
+    size: "size-4",
+  },
+  {
+    name: "Flask",
+    color: "#e2e2e2",
+    img: "/tecnologies/flask.svg",
     size: "size-4",
   },
   {
